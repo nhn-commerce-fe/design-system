@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://fe-sdk.cdn-nhncommerce.com/@ncds/ui-admin/1.1/main.min.css"
+		/>
+		<link type="text/css" href="./bootstrap.css" rel="stylesheet" />
+		<link type="text/css" href="./non-responsive.css" rel="stylesheet" />
+		<link
+			type="text/css"
+			href="./gd5-style.css?ts=1756456940"
+			rel="stylesheet"
+		/>
+		<link
+			type="text/css"
+			href="http://gdadmin.glocal.godomall.com/admin/css/admin-custom.css?ts=1756456942"
+			rel="stylesheet"
+		/>
+		<style>
+			:root {
+				--font-fallback: CommerceSans, Malgun Gothic, '맑은 고딕', AppleGothic,
+					Dotum, '돋움';
+			}
+			body {
+				line-height: 1.42857143;
+				font-size: 12px;
+				font-family: Malgun Gothic, '맑은 고딕', AppleGothic, Dotum, '돋움',
+					'Helvetica Neue', Helvetica, Arial, sans-serif;
+			}
+
+			.gd-content,
+			.ncua-modal {
+				padding: 10px;
+				line-height: var(--line-height-xs, 18px);
+				font-size: var(--font-size-xs);
+				font-family: var(--font-families-commerce-sans, --font-fallback);
+				font-family: var(--font-fallback);
+			}
+
+			[data-name] {
+				padding: 10px;
+				margin-block-end: 10px;
+				cursor: pointer;
+			}
+
+			hr {
+				margin-block: 10px;
+			}
+
+			dialog {
+				top: 10px;
+				left: auto;
+				right: 10px;
+
+				h3 {
+					padding: 10px;
+					border-block-end: 1px solid #000;
+				}
+
+				ul {
+					padding: 10px;
+				}
+
+				li + li {
+					margin-block-start: 10px;
+				}
+			}
+		</style>
+		<link rel="stylesheet" href="./common.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="gd-content">
+			<button data-name="ncua-card">copy</button>
+			<section class="ncua-card">
+				<header class="ncua-card__header">
+					<h3 class="ncua-card__title">카테고리</h3>
+				</header>
+				<section class="ncua-card__body">hello</section>
+			</section>
+
+			<hr />
+
+			<button data-name="ncua-table--horizontal">copy</button>
+			<div class="ncua-table ncua-table--horizontal">
+				<table>
+					<thead>
+						<tr>
+							<th>
+								<div>horizontal</div>
+							</th>
+							<th><div>카테고리명</div></th>
+							<th><div>카테고리명</div></th>
+							<th><div>카테고리명</div></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><div>카테고리명</div></td>
+							<td><div>카테고리명</div></td>
+							<td><div>카테고리명</div></td>
+							<td><div>카테고리명</div></td>
+							<td><div>카테고리명</div></td>
+						</tr>
+						<tr>
+							<td><div>카테고리명</div></td>
+							<td><div>카테고리명</div></td>
+							<td><div>카테고리명</div></td>
+							<td><div>카테고리명</div></td>
+							<td>
+								<div>
+									<button
+										class="ncua-btn ncua-btn--xxs ncua-btn--secondary-gray"
+									>
+										수정
+									</button>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<hr />
+
+			<button data-name="ncua-table--vertical">copy</button>
+			<div class="ncua-table ncua-table--vertical">
+				<table>
+					<tbody>
+						<tr>
+							<th><div>카테고리명</div></th>
+							<td><div>카테고리명</div></td>
+						</tr>
+						<tr>
+							<th><div>카테고리명</div></th>
+							<td><div>카테고리명</div></td>
+						</tr>
+						<tr>
+							<th><div>카테고리명</div></th>
+							<td><div>카테고리명</div></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<hr />
+
+			<button data-name="ncua-description">copy</button>
+			<div class="ncua-description is-open">
+				<p class="ncua-description__summary">summary <button>google</button></p>
+				<div class="ncua-description__content">
+					<ul>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+					</ul>
+				</div>
+				<button class="ncua-description__button">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="16"
+						height="16"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="none"
+					>
+						<path
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="m18 15-6-6-6 6"
+						></path>
+					</svg>
+				</button>
+			</div>
+
+			<hr />
+
+			<button data-name="ncua-description--success">copy</button>
+			<div class="ncua-description ncua-description--success">
+				<p class="ncua-description__summary">
+					summary <a href="https://www.google.com">google</a>
+				</p>
+				<div class="ncua-description__content">
+					<ul>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+					</ul>
+				</div>
+
+				<button class="ncua-description__button">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="16"
+						height="16"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="none"
+					>
+						<path
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="m18 15-6-6-6 6"
+						></path>
+					</svg>
+				</button>
+			</div>
+
+			<hr />
+
+			<section class="ncua-info">
+				<span class="ncua-info__ico">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="32"
+						height="32"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="none"
+					>
+						<path
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M12 8v4m0 4h.01M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10"
+						></path>
+					</svg>
+				</span>
+				<h2 class="ncua-info__title">서비스 주요 안내 사항 타이틀</h2>
+				<p class="ncua-info__content">
+					서비스 주요 안내 사항내용을 입력하세요. 서비스 주요 안내 사항내용을
+					입력하세요.서비스 주요 안내 사항내용을 입력하세요.서비스 주요 안내
+					사항내용을 입력하세요.서비스 주요 안내 사항내용을 입력하세요.서비스
+					주요 안내 사항내용을 입력하세요.
+				</p>
+				<button class="ncua-btn ncua-btn--xs ncua-btn--secondary-gray">
+					기타 옵션 버튼
+				</button>
+			</section>
+		</div>
+
+		<hr />
+
+		<div class="ncua-modal ncua-modal--md">
+			<header
+				class="ncua-modal__header ncua-modal__header--left ncua-modal__header--close-button"
+			>
+				<div class="ncua-modal__title">
+					<div class="ncua-modal__title-text">
+						제목은 한문장으로 입력해주세요.
+					</div>
+					<div class="ncua-modal__title-subtitle">
+						최대 글자수 공백 포함 70자까지 입력 가능합니다.
+					</div>
+				</div>
+				<button
+					class="ncua-button-close-x ncua-button-close-x--sm ncua-button-close-x--light ncua-modal__close-button"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="20"
+						height="20"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="none"
+					>
+						<path
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M18 6 6 18M6 6l12 12"
+						></path>
+					</svg>
+				</button>
+			</header>
+			<div class="ncua-modal__content">모달 내용을 이곳에 작성합니다.</div>
+			<div class="ncua-modal__actions-wrapper">
+				<div
+					class="ncua-modal__actions ncua-modal__actions--horizontal ncua-modal__actions--stretch"
+				>
+					<button class="ncua-btn ncua-btn--sm ncua-btn--secondary-gray">
+						<span class="ncua-btn__label">취소</span>
+					</button>
+					<button class="ncua-btn ncua-btn--md ncua-btn--primary">
+						<span class="ncua-btn__label">확인</span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		
+		<script src="./ncua.js"></script>
+	</body>
+</html>
