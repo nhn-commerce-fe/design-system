@@ -1,0 +1,86 @@
+/* =============================== */
+/* breadcrumb, 컨텐츠 타이틀 영역 스타일 재정의 */
+/* =============================== */
+#header .breadcrumb {
+    --gap: 8px;
+
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+    padding: 24px 40px 0;
+    height: 40px;
+    color: var(--gray-400);
+    border-block-end: none;
+    line-height: var(--line-height-xxs, 16px);
+    font-family: var(--font-family-ncua-commerce-sans);
+}
+
+#header .breadcrumb > li + li:before {
+    margin-inline-end: var(--gap);
+    width: 16px;
+    height: 16px;
+    background: url('../../image/breadcrumb-arrow-right.png') no-repeat center center / cover;
+}
+
+#header .breadcrumb > li:last-child {
+    color: var(--gray-600, #2f2f30);
+    font-weight: var(--font-weights-commerce-sans-1, 500);
+}
+
+#container-wrap #content.row {
+    margin-top: 40px;
+}
+
+#container-wrap #content.row[style] {
+    margin-top: 0;
+}
+
+#content .page-header.js-affix {
+    z-index: 1;
+    border-block-end-width: 0;
+}
+
+
+.page-header {
+    position: relative;
+    margin-block:0 24px;
+    margin-inline-start: -30px;
+    padding-block: 18px 24px;
+    padding-inline: 40px;
+    height: 64px;
+    box-shadow: var(--shadow-sm, 0px 1px 3px 0px #1018281a, 0px 1px 2px 0px #1018280f);
+}
+
+
+.page-header h3 {
+    margin-block: 0;
+}
+
+.page-header h3 + .ncua-btn--primary {
+    float: none;
+    position: absolute;
+    right: 40px;
+    bottom: 15px;
+    line-height: 1;
+}
+
+
+#content .page-header.affix {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding-inline: 40px;
+    margin-inline-start: 0;
+}
+
+#content .page-header.affix[style] {
+    margin-inline-start: -30px;
+}
+
+
+/* =============================== */
+/* content 영역 배경 */
+/* =============================== */
+.ncds .col-xs-12 {
+    background-color: var(--gray-50, #f6f7f9);
+}

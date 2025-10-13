@@ -1,0 +1,13 @@
+/* =============================== */
+/* search 영역 버튼 스타일 */
+/* =============================== */
+.ncua-btn-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-block: 18px 0;
+}
+
+.ncua-btn-group.align-right {
+    justify-content: flex-end;
+}

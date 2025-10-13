@@ -1,0 +1,21 @@
+/* =============================== */
+/* radio 스타일 */
+/* =============================== */
+.ncua-content [type="radio"] {
+    width: 16px;
+    height: 16px;
+    background-image: none;
+    border: 1px solid var(--gray-200, #d3d4d8);
+    border-radius: 50%;
+}
+
+.ncua-content [type="radio"],
+.ncua-content [type="checkbox"],
+.ncua-content [type="radio"]:checked,
+.ncua-content [type="checkbox"]:checked {
+    width: 100%;
+    height: 100%;
+    background-image: none;
+    border: 1px solid var(--gray-200);
+    border-radius: 4px;
+}

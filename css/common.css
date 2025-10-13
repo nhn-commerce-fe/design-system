@@ -1,0 +1,36 @@
+:root {
+    --font-family-ncua-commerce-sans: CommerceSans,'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+}
+/* ncua로 인한 스타일 오버라이딩 되어 고도몰 어드민 스타일로 재정의 */
+body {
+    line-height: 1.42857143;
+    font-size: 13px;
+    font-family: Malgun Gothic, '맑은 고딕', AppleGothic, Dotum, '돋움', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+
+/* =============================== */
+/* content 영역 base스타일 재정의 */
+/* =============================== */
+.ncua-modal,
+.ncua-content {
+    line-height: var(--line-height-xs, 18px);
+    font-size: var(--font-size-xs, 13px);
+    font-family: var(--font-family-ncua-commerce-sans);
+}
+
+/* =============================== */
+/* utility */
+/* =============================== */
+.ncua-flex-column {
+    flex-direction: column;
+}
+
+.ncua-align-right {
+    justify-content: flex-end;
+}
+
+.ncua-align-center {
+    justify-content: center;
+}

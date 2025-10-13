@@ -3,10 +3,6 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="stylesheet"
-			href="https://fe-sdk.cdn-nhncommerce.com/@ncds/ui-admin/1.1/main.min.css"
-		/>
 		<link type="text/css" href="./bootstrap.css" rel="stylesheet" />
 		<link type="text/css" href="./non-responsive.css" rel="stylesheet" />
 		<link
@@ -19,26 +15,15 @@
 			href="http://gdadmin.glocal.godomall.com/admin/css/admin-custom.css?ts=1756456942"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://fe-sdk.cdn-nhncommerce.com/@ncds/ui-admin/1.1/main.min.css"
+		/>
+        <link rel="stylesheet" href="./css/style.css">
 		<style>
-			:root {
-				--font-fallback: CommerceSans, Malgun Gothic, '맑은 고딕', AppleGothic,
-					Dotum, '돋움';
-			}
-			body {
-				line-height: 1.42857143;
-				font-size: 12px;
-				font-family: Malgun Gothic, '맑은 고딕', AppleGothic, Dotum, '돋움',
-					'Helvetica Neue', Helvetica, Arial, sans-serif;
-			}
-
-			.gd-content,
-			.ncua-modal {
-				padding: 10px;
-				line-height: var(--line-height-xs, 18px);
-				font-size: var(--font-size-xs);
-				font-family: var(--font-families-commerce-sans, --font-fallback);
-				font-family: var(--font-fallback);
-			}
+            body {
+                padding: 10px;
+            }
 
 			[data-name] {
 				padding: 10px;
@@ -50,30 +35,11 @@
 				margin-block: 10px;
 			}
 
-			dialog {
-				top: 10px;
-				left: auto;
-				right: 10px;
-
-				h3 {
-					padding: 10px;
-					border-block-end: 1px solid #000;
-				}
-
-				ul {
-					padding: 10px;
-				}
-
-				li + li {
-					margin-block-start: 10px;
-				}
-			}
-		</style>
-		<link rel="stylesheet" href="./common.css" />
-		<title>Document</title>
+		</style>	
+        	<title>Document</title>
 	</head>
 	<body>
-		<div class="gd-content">
+		<div class="ncua-content">
 			<button data-name="ncua-card">copy</button>
 			<section class="ncua-card">
 				<header class="ncua-card__header">
@@ -246,6 +212,120 @@
 					기타 옵션 버튼
 				</button>
 			</section>
+
+
+            <h3>Module</h3>
+            <em style="font-weight: 700; font-size: 1.2rem;">(B015)</em>
+            <br />
+			<button data-name="ncua-search-result">copy</button>
+
+            <div class="ncua-search-result" data-component-no="b015">
+                <!-- summary -->
+                <div class="ncua-search-result__summary">
+                    <p class="ncua-search-result__summary-count">검색 <strong>0</strong>개 / 전체 <strong>0</strong>개</p> 
+                </div>
+                <!-- // summary -->
+                <h4 class="ncua-search-result__title">게시글 양식 검색 결과</h4>
+
+                <!-- 검색 결과 액션 -->
+                <div class="ncua-search-result__actions">
+                    <button class="ncua-btn ncua-btn--xs ncua-btn--secondary">
+                        선택 삭제
+                    </button>
+                    <div class="ncua-search-result__actions-select">
+                        <!-- 임시 코드 입니다. -->
+                        <span class="ncua-select">
+                            <span class="ncua-select__content ncua-select--xs">
+                                <select class="ncua-select__tag">
+                                    <option value="">과일을 선택하세요</option>
+                                    <option value="apple">사과</option>
+                                    <option value="banana">바나나</option>
+                                    <option value="orange">오렌지</option>
+                                </select>
+                            </span>
+                        </span>
+                        <!-- // 임시 코드 입니다. -->
+                    </div> 
+                </div>
+                <!-- // 검색 결과 액션 -->
+                <!-- table -->
+                <div class="ncua-table ncua-table--horizontal">
+                    <table>
+                        <colgroup>
+                            <col width="56px">
+                            <col width="5%">
+                            <col width="10%">
+                            <col width="*">
+                            <col width="15%">
+                            <col width="10%">
+                        <thead>
+                            <tr>
+                                <th class="ncua-search-result__check">
+                                    <label class="ncua-checkbox-field ncua-checkbox-field--xs has-text">
+                                        <span class="ncua-checkbox-input ncua-checkbox-input--xs ncua-checkbox-field__input">
+                                            <input type="checkbox" />
+                                            <span class="ncua-checkbox-input__ico">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                <path
+                                                d="M10 3L4.5 8.5L2 6"
+                                                stroke="#171818"
+                                                stroke-width="1.6666"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            </svg>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </th>
+                                <th><div>번호</div></th>
+                                <th><div>분류</div></th>
+                                <th><div>제목</div></th>
+                                <th><div>등록일 / 수정일</div></th>
+                                <th><div>수정</div></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="ncua-search-result__check">
+                                    <label class="ncua-checkbox-field ncua-checkbox-field--xs has-text">
+                                        <span class="ncua-checkbox-input ncua-checkbox-input--xs ncua-checkbox-field__input">
+                                            <input type="checkbox" />
+                                            <span class="ncua-checkbox-input__ico">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                <path
+                                                d="M10 3L4.5 8.5L2 6"
+                                                stroke="#171818"
+                                                stroke-width="1.6666"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            </svg>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </td>
+                                <td><div>1</div></td>
+                                <td><div>2</div></td>
+                                <td>
+                                    <div>
+                                        <a class="js-btn-modify hand" data-sno="1">1</a>
+                                    </div>
+                                </td>
+                                <td><div>1<br>1</div></td>
+                                <td><div><button class="js-btn-modify ncua-btn ncua-btn--xs ncua-btn--secondary-gray" data-sno="<?= $row['sno'] ?>">수정</button></div></td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="no-data"><div>템플릿이 없습니다.</div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="ncua-search-result__actions ncua-search-result__actions--bottom">
+                    <button class="ncua-btn ncua-btn--xs ncua-btn--secondary">
+                        선택 삭제
+                    </button>
+                </div>
+                <!-- // table -->
+            </div>
 		</div>
 
 		<hr />
@@ -298,7 +378,25 @@
 			</div>
 		</div>
 
-		
+		<hr />
+
+<script>
+			const btns = document.querySelectorAll('button[data-name]');
+
+			btns.forEach((btn) => {
+				btn.addEventListener('click', () => {
+					console.log(btn.dataset.name);
+					const element = document.querySelector(`.${btn.dataset.name}`);
+					const clone = element.cloneNode(true);
+
+					if (!clone) return;
+
+					navigator.clipboard.writeText(clone.outerHTML);
+					alert('copied');
+				});
+			});
+
+		</script>
 		<script src="./ncua.js"></script>
 	</body>
 </html>
