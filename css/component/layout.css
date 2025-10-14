@@ -81,6 +81,7 @@
 /* =============================== */
 /* content 영역 배경 */
 /* =============================== */
-.ncds .col-xs-12 {
+.ncds #content .col-xs-12 {
+    padding-block-end: 48px;
     background-color: var(--gray-50, #f6f7f9);
 }

@@ -2,6 +2,7 @@
 /* table */
 /* =============================== */
 .ncua-table {
+    border: 1px solid var(--gray-100, #eaecf0);
     border-radius: 8px;
     font-size: var(--font-size-xs, 13px);
     box-shadow: var(--shadow-xs, 0px 1px 2px 0px #1018280d);
@@ -34,6 +35,7 @@
     td {
         color: var(--gray-700, #171818);
         font-weight: var(--font-weights-commerce-sans-0, 400);
+        border: 1px solid var(--gray-100, #eaecf0);
     }
 
     td > div {
@@ -51,19 +53,22 @@
 }
 
 .ncua-table--horizontal {
-    border-block-end: 1px solid var(--gray-100, #eaecf0);
 
     th {
         background-color: var(--gray-100, #eaecf0);
         border-block-end: 1px solid var(--gray-200, #d3d4d8);
     }
 
-    th:first-child {
-        border-inline-start: 1px solid var(--gray-100, #eaecf0);
-    }
-
     th + th {
         border-inline-start: 1px solid var(--gray-200, #d3d4d8);
+    }
+
+    thead th:first-child {
+        border-top-left-radius: 8px;
+    }
+
+    thead th:last-child {
+        border-top-right-radius: 8px;
     }
 
     th > div {
@@ -72,17 +77,26 @@
     }
 
     td {
-        border: solid var(--gray-100, #eaecf0);
-        border-width: 1px 1px 0 1px;
+        border-width: 1px 0 0 1px;
+    }
+
+    td:first-child {
+        border-inline-start-width: 0;
     }
 }
 
 .ncua-table--vertical {
-    border: 1px solid var(--gray-100, #eaecf0);
 
     tr:nth-child(n + 2) th,
     tr:nth-child(n + 2) td {
         border-block-start: 1px solid var(--gray-100, #eaecf0);
+    }
+
+    tr:first-child th {
+        border-top-left-radius: 8px;
+    }
+    tr:last-child th {
+        border-bottom-left-radius: 8px;
     }
 
     th {
@@ -96,7 +110,7 @@
     }
 
     td {
-        border-inline-start: 1px solid var(--gray-100, #eaecf0);
+        border-width: 0 0 0 1px;
     }
 }
 
@@ -105,27 +119,6 @@
 /* =============================== */
 .ncua-search-result {
     margin-block-start: 24px;
-    box-shadow: var(--shadow-xs, 0px 1px 2px 0px #1018280d);
-    border-radius: 8px;
-}
-
-.ncua-search-result__summary {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-block-end: 12px;
-}
-
-.ncua-search-result__summary-count {
-    margin-block-end: 0;
-    font-size: var(--font-size-sm, 14px);
-    line-height: var(--line-height-sm, 22px);
-    color: var(--gray-500, #464748);
-}
-
-.ncua-search-result__summary-count strong {
-    color: var(--primary-red-450, #f7444e);
-    font-weight: var(--font-weights-commerce-sans-2, 700);
 }
 
 .ncua-search-result__title {
@@ -136,18 +129,59 @@
     font-weight: var(--font-weights-commerce-sans-1, 500);
 }
 
+.ncua-search-result__summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-inline-start: 12px;
+    margin-block-end: 12px;
+}
+
+.ncua-search-result__summary-count {
+    margin-block-end: 0;
+    font-size: var(--font-size-xs, 13px);
+    line-height: var(--line-height-xs, 18px);
+    color: var(--gray-500, #464748);
+}
+
+.ncua-search-result__summary-count strong {
+    color: var(--primary-red-450, #f7444e);
+    font-weight: var(--font-weights-commerce-sans-2, 700);
+}
+
+
+.ncua-search-result__content {
+    border: 1px solid var(--gray-100, #d3d4d8);
+    box-shadow: var(--shadow-xs, 0px 1px 2px 0px #1018280d);
+    border-radius: 8px;
+}
+
 .ncua-search-result__actions {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 8px 24px;
+    height: 44px;
     background-color: var(--gray-50, #f6f7f9);
     border-radius: 8px 8px 0 0;
-    border: 1px solid var(--gray-100, #d3d4d8);
+    border-block-end: 1px solid var(--gray-200);
 }
 
 .ncua-search-result__actions--bottom {
     border-radius: 0 0 8px 8px;
+    border-block-end-color: var(--gray-100);
+    border-block-start: 1px solid var(--gray-200);
+}
+
+.ncua-search-result__actions-text {
+    svg path {
+        stroke: var(--gray-500, #464748);
+    }
+
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-inline-end: 12px;
 }
 
 .ncua-search-result__actions-select {
@@ -158,6 +192,16 @@
 }
 
 .ncua-search-result .ncua-table--horizontal {
+    border-width: 0;
+
+    th:first-child {
+        border-top-left-radius: 0;
+    }
+
+    th:last-child {
+        border-top-right-radius: 0;
+    }
+
     th > div,
     td > div {
         justify-content: center;
@@ -177,11 +221,14 @@
 } 
 
 
-.ncua-search-result__check {
-    text-align: center;
-}
-
 .ncua-search-result .ncua-checkbox-field {
     margin-block-end: 0;
 }
 
+
+.ncua-search-result-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+}

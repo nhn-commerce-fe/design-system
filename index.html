@@ -215,117 +215,339 @@
 
 
             <h3>Module</h3>
-            <em style="font-weight: 700; font-size: 1.2rem;">(B015)</em>
-            <br />
+
+            
+            <p style="font-weight: 700; font-size: 1.2rem;">(B015)</p>
 			<button data-name="ncua-search-result">copy</button>
 
             <div class="ncua-search-result" data-component-no="b015">
+                <h4 class="ncua-search-result__title">게시글 양식 검색 결과</h4>
+
                 <!-- summary -->
                 <div class="ncua-search-result__summary">
                     <p class="ncua-search-result__summary-count">검색 <strong>0</strong>개 / 전체 <strong>0</strong>개</p> 
                 </div>
                 <!-- // summary -->
+
+                <div class="ncua-search-result__content">
+                    <!-- 검색 결과 액션 -->
+                    <div class="ncua-search-result__actions">
+                        <span>
+                            <span class="ncua-search-result__actions-text"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 6 9 17l-5-5"></path></svg>선택한 주문을</span>
+                            <button class="ncua-btn ncua-btn--xs ncua-btn--secondary">
+                                선택 삭제
+                            </button>
+                        </span>
+                        <div class="ncua-search-result__actions-select">
+                            <!-- 임시 코드 입니다. -->
+                            <span class="ncua-select">
+                                <span class="ncua-select__content ncua-select--xs">
+                                    <select class="ncua-select__tag">
+                                        <option value="">과일을 선택하세요</option>
+                                        <option value="apple">사과</option>
+                                        <option value="banana">바나나</option>
+                                        <option value="orange">오렌지</option>
+                                    </select>
+                                </span>
+                            </span>
+                            <!-- // 임시 코드 입니다. -->
+                        </div> 
+                    </div>
+                    <!-- // 검색 결과 액션 -->
+                    <!-- table -->
+                    <div class="ncua-table ncua-table--horizontal">
+                        <table>
+                            <colgroup>
+                                <col width="56px">
+                                <col width="5%">
+                                <col width="10%">
+                                <col width="*">
+                                <col width="15%">
+                                <col width="10%">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div>
+                                            
+                                            <label class="ncua-checkbox-field ncua-checkbox-field--xs has-text">
+                                                <span class="ncua-checkbox-input ncua-checkbox-input--xs ncua-checkbox-field__input">
+                                                    <input type="checkbox" />
+                                                    <span class="ncua-checkbox-input__ico">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                        <path
+                                                        d="M10 3L4.5 8.5L2 6"
+                                                        stroke="#171818"
+                                                        stroke-width="1.6666"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th><div>번호</div></th>
+                                    <th><div>분류</div></th>
+                                    <th><div>제목</div></th>
+                                    <th><div>등록일 / 수정일</div></th>
+                                    <th><div>수정</div></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            
+                                            <label class="ncua-checkbox-field ncua-checkbox-field--xs has-text">
+                                                <span class="ncua-checkbox-input ncua-checkbox-input--xs ncua-checkbox-field__input">
+                                                    <input type="checkbox" />
+                                                    <span class="ncua-checkbox-input__ico">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                        <path
+                                                        d="M10 3L4.5 8.5L2 6"
+                                                        stroke="#171818"
+                                                        stroke-width="1.6666"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td><div>1</div></td>
+                                    <td><div>2</div></td>
+                                    <td>
+                                        <div>
+                                            <a class="js-btn-modify hand" data-sno="1">1</a>
+                                        </div>
+                                    </td>
+                                    <td><div>1<br>1</div></td>
+                                    <td><div><button class="js-btn-modify ncua-btn ncua-btn--xs ncua-btn--secondary-gray" data-sno="<?= $row['sno'] ?>">수정</button></div></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6" class="no-data"><div>템플릿이 없습니다.</div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="ncua-search-result__actions ncua-search-result__actions--bottom">
+                        <button class="ncua-btn ncua-btn--xs ncua-btn--secondary">
+                            선택 삭제
+                        </button>
+                    </div>
+                    <!-- // table -->
+                </div>
+
+            </div>
+
+                        <div class="ncua-search-result" data-component-no="b015">
                 <h4 class="ncua-search-result__title">게시글 양식 검색 결과</h4>
 
-                <!-- 검색 결과 액션 -->
-                <div class="ncua-search-result__actions">
-                    <button class="ncua-btn ncua-btn--xs ncua-btn--secondary">
-                        선택 삭제
-                    </button>
-                    <div class="ncua-search-result__actions-select">
-                        <!-- 임시 코드 입니다. -->
-                        <span class="ncua-select">
-                            <span class="ncua-select__content ncua-select--xs">
-                                <select class="ncua-select__tag">
-                                    <option value="">과일을 선택하세요</option>
-                                    <option value="apple">사과</option>
-                                    <option value="banana">바나나</option>
-                                    <option value="orange">오렌지</option>
-                                </select>
+                <!-- summary -->
+                <div class="ncua-search-result__summary">
+                    <p class="ncua-search-result__summary-count">검색 <strong>0</strong>개 / 전체 <strong>0</strong>개</p> 
+                </div>
+                <!-- // summary -->
+
+                <div class="ncua-search-result__content">
+                    <!-- 검색 결과 액션 -->
+                    <div class="ncua-search-result__actions">
+                        <button class="ncua-btn ncua-btn--xs ncua-btn--secondary">
+                            선택 삭제
+                        </button>
+                        <div class="ncua-search-result__actions-select">
+                            <!-- 임시 코드 입니다. -->
+                            <span class="ncua-select">
+                                <span class="ncua-select__content ncua-select--xs">
+                                    <select class="ncua-select__tag">
+                                        <option value="">과일을 선택하세요</option>
+                                        <option value="apple">사과</option>
+                                        <option value="banana">바나나</option>
+                                        <option value="orange">오렌지</option>
+                                    </select>
+                                </span>
                             </span>
-                        </span>
-                        <!-- // 임시 코드 입니다. -->
-                    </div> 
+                            <!-- // 임시 코드 입니다. -->
+                        </div> 
+                    </div>
+                    <!-- // 검색 결과 액션 -->
+                    <!-- table -->
+                    <div class="ncua-table ncua-table--horizontal">
+                        <table>
+                            <colgroup>
+                                <col width="56px">
+                                <col width="5%">
+                                <col width="10%">
+                                <col width="*">
+                                <col width="15%">
+                                <col width="10%">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div>
+                                            <label class="ncua-checkbox-field ncua-checkbox-field--xs has-text">
+                                                <span class="ncua-checkbox-input ncua-checkbox-input--xs ncua-checkbox-field__input">
+                                                    <input type="checkbox" />
+                                                    <span class="ncua-checkbox-input__ico">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                        <path
+                                                        d="M10 3L4.5 8.5L2 6"
+                                                        stroke="#171818"
+                                                        stroke-width="1.6666"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th><div>번호</div></th>
+                                    <th><div>분류</div></th>
+                                    <th><div>제목</div></th>
+                                    <th><div>등록일 / 수정일</div></th>
+                                    <th><div>수정</div></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <label class="ncua-checkbox-field ncua-checkbox-field--xs has-text">
+                                                <span class="ncua-checkbox-input ncua-checkbox-input--xs ncua-checkbox-field__input">
+                                                    <input type="checkbox" />
+                                                    <span class="ncua-checkbox-input__ico">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                        <path
+                                                        d="M10 3L4.5 8.5L2 6"
+                                                        stroke="#171818"
+                                                        stroke-width="1.6666"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td><div>1</div></td>
+                                    <td><div>2</div></td>
+                                    <td>
+                                        <div>
+                                            <a class="js-btn-modify hand" data-sno="1">1</a>
+                                        </div>
+                                    </td>
+                                    <td><div>1<br>1</div></td>
+                                    <td><div><button class="js-btn-modify ncua-btn ncua-btn--xs ncua-btn--secondary-gray" data-sno="<?= $row['sno'] ?>">수정</button></div></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6" class="no-data"><div>템플릿이 없습니다.</div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- // table -->
                 </div>
-                <!-- // 검색 결과 액션 -->
-                <!-- table -->
-                <div class="ncua-table ncua-table--horizontal">
-                    <table>
-                        <colgroup>
-                            <col width="56px">
-                            <col width="5%">
-                            <col width="10%">
-                            <col width="*">
-                            <col width="15%">
-                            <col width="10%">
-                        <thead>
-                            <tr>
-                                <th class="ncua-search-result__check">
-                                    <label class="ncua-checkbox-field ncua-checkbox-field--xs has-text">
-                                        <span class="ncua-checkbox-input ncua-checkbox-input--xs ncua-checkbox-field__input">
-                                            <input type="checkbox" />
-                                            <span class="ncua-checkbox-input__ico">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                                <path
-                                                d="M10 3L4.5 8.5L2 6"
-                                                stroke="#171818"
-                                                stroke-width="1.6666"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"></path>
-                                            </svg>
-                                            </span>
-                                        </span>
-                                    </label>
-                                </th>
-                                <th><div>번호</div></th>
-                                <th><div>분류</div></th>
-                                <th><div>제목</div></th>
-                                <th><div>등록일 / 수정일</div></th>
-                                <th><div>수정</div></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="ncua-search-result__check">
-                                    <label class="ncua-checkbox-field ncua-checkbox-field--xs has-text">
-                                        <span class="ncua-checkbox-input ncua-checkbox-input--xs ncua-checkbox-field__input">
-                                            <input type="checkbox" />
-                                            <span class="ncua-checkbox-input__ico">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                                <path
-                                                d="M10 3L4.5 8.5L2 6"
-                                                stroke="#171818"
-                                                stroke-width="1.6666"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"></path>
-                                            </svg>
-                                            </span>
-                                        </span>
-                                    </label>
-                                </td>
-                                <td><div>1</div></td>
-                                <td><div>2</div></td>
-                                <td>
-                                    <div>
-                                        <a class="js-btn-modify hand" data-sno="1">1</a>
-                                    </div>
-                                </td>
-                                <td><div>1<br>1</div></td>
-                                <td><div><button class="js-btn-modify ncua-btn ncua-btn--xs ncua-btn--secondary-gray" data-sno="<?= $row['sno'] ?>">수정</button></div></td>
-                            </tr>
-                            <tr>
-                                <td colspan="6" class="no-data"><div>템플릿이 없습니다.</div></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="ncua-search-result__actions ncua-search-result__actions--bottom">
-                    <button class="ncua-btn ncua-btn--xs ncua-btn--secondary">
-                        선택 삭제
-                    </button>
-                </div>
-                <!-- // table -->
+
             </div>
+
+            <div class="ncua-search-result-pagination">
+                <div class="ncua-pagination ncua-pagination--pc">
+                <button
+                    class="ncua-btn ncua-btn--xs only-icon is-disable ncua-pagination__first ncua-btn--secondary-gray"
+                    disabled="">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="none"
+                    color="#D0D5DD">
+                    <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m18 17-5-5 5-5m-7 10-5-5 5-5"></path>
+                    </svg>
+                </button>
+                <button
+                    class="ncua-btn ncua-btn--xs only-icon is-disable ncua-pagination__before ncua-btn--secondary-gray"
+                    disabled="">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="none"
+                    color="#D0D5DD">
+                    <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m15 18-6-6 6-6"></path>
+                    </svg>
+                </button>
+                <ul class="ncua-pagination__list">
+                    <li class="ncua-pagination__item"><button class="ncua-pagination__page-num is-current">1</button></li>
+                    <li class="ncua-pagination__item"><button class="ncua-pagination__page-num">2</button></li>
+                    <li class="ncua-pagination__item"><button class="ncua-pagination__page-num">3</button></li>
+                    <li class="ncua-pagination__item"><button class="ncua-pagination__page-num">4</button></li>
+                    <li class="ncua-pagination__item"><button class="ncua-pagination__page-num">5</button></li>
+                    <li class="ncua-pagination__item"><button class="ncua-pagination__page-num">6</button></li>
+                    <li class="ncua-pagination__item"><button class="ncua-pagination__page-num">7</button></li>
+                    <li class="ncua-pagination__item"><button class="ncua-pagination__page-num">8</button></li>
+                    <li class="ncua-pagination__item"><button class="ncua-pagination__page-num">9</button></li>
+                    <li class="ncua-pagination__item"><button class="ncua-pagination__page-num">10</button></li>
+                </ul>
+                <p class="ncua-pagination__page-info">
+                    <em class="ncua-pagination__current-num">1</em>
+                    / 20
+                </p>
+                <button class="ncua-btn ncua-btn--xs only-icon ncua-pagination__next ncua-btn--secondary-gray">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="none"
+                    color="#0C111D">
+                    <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m9 18 6-6-6-6"></path>
+                    </svg>
+                </button>
+                <button class="ncua-btn ncua-btn--xs only-icon ncua-pagination__last ncua-btn--secondary-gray">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="none"
+                    color="#0C111D">
+                    <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m6 17 5-5-5-5m7 10 5-5-5-5"></path>
+                    </svg>
+                </button>
+                </div>
+            </div>
+
+            <p>pagination은 wrapping <code>&lt;div class="ncua-search-result-pagination"&gt;</code> 으로 감싸주면 됩니다. </p>
+
+
 		</div>
 
 		<hr />
