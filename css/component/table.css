@@ -47,8 +47,12 @@
         justify-content: center;
     }
 
-    .no-data > div {
-        justify-content: center;
+    .ncua-required > div::before {
+        content: '*';
+        margin-inline-end: 4px;
+        color: var(--primary-red-500, #f7444e);
+        font-weight: var(--font-weights-commerce-sans-1, 500);
+        font-size: var(--font-size-ss, 14px);
     }
 }
 
