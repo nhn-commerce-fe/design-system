@@ -85,3 +85,25 @@
     padding-block-end: 48px;
     background-color: var(--gray-50, #f6f7f9);
 }
+
+
+
+/* =============================== */
+/* C038 항목 내(콘텐츠 3Depth) 그리드 없는 레이아웃 */
+/* =============================== */ 
+.ncua-border-content-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 16px;
+    border: 1px solid var(--gray-200);
+    border-radius: 8px;
+    width: 100%;
+
+    .ncua-border-content {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        font-weight: var(--font-weights-commerce-sans-1);
+    }
+}
