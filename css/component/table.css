@@ -58,24 +58,24 @@
 
 .ncua-table--horizontal {
 
-    th {
+    thead > tr > th {
         background-color: var(--gray-100, #eaecf0);
         border-block-end: 1px solid var(--gray-200, #d3d4d8);
     }
 
-    th + th {
+    thead > tr > th + th {
         border-inline-start: 1px solid var(--gray-200, #d3d4d8);
     }
 
-    thead th:first-child {
+    thead > tr > th:first-child {
         border-top-left-radius: 8px;
     }
 
-    thead th:last-child {
+    thead > tr > th:last-child {
         border-top-right-radius: 8px;
     }
 
-    th > div {
+    thead > tr > th > div {
         padding-block-start: 1px;
         min-height: 40px;
     }
@@ -91,32 +91,38 @@
 
 .ncua-table--vertical {
 
-    tr:nth-child(n + 2) th,
-    tr:nth-child(n + 2) td {
-        border-block-start: 1px solid var(--gray-100, #eaecf0);
+    th + td {
+        border-width: 0 0 0 1px;
     }
 
-    tr:first-child th {
-        border-top-left-radius: 8px;
-    }
-    tr:last-child th {
-        border-bottom-left-radius: 8px;
-    }
-
-    th {
+    tbody > tr > th {
         background-color: var(--gray-50, #f6f7f9);
         width: 240px;
     }
 
-    th > div {
+    tbody > tr > th > div {
         padding-block: 12px;
         min-height: 48px;
     }
 
-    td {
-        border-width: 0 0 0 1px;
+    tbody > tr:nth-child(n + 2) > th {
+        border-block-start: 1px solid var(--gray-100, #eaecf0);
+    }
+
+    tr:nth-child(n + 2) > th + td {
+        border-block-start: 1px solid var(--gray-100, #eaecf0);
+    }
+
+    tbody > tr:first-child > th {
+        border-top-left-radius: 8px;
+    }
+
+    tbody > tr:last-child > th {
+        border-bottom-left-radius: 8px;
     }
 }
+
+
 
 /* =============================== */
 /* ncua-search-result (B015)*/
