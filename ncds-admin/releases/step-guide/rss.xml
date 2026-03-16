@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>NCDS Admin Blog</title>
+        <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/step-guide</link>
+        <description>NCDS Admin Blog</description>
+        <lastBuildDate>Sun, 28 Jan 2024 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ko</language>
+        <item>
+            <title><![CDATA[v1.0.0]]></title>
+            <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/step-guide/release-note-step-guide-1.0.0</link>
+            <guid>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/step-guide/release-note-step-guide-1.0.0</guid>
+            <pubDate>Sun, 28 Jan 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Step Guide 릴리즈 노트 (v1.0.0)]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-guide-릴리즈-노트-v100">Step Guide 릴리즈 노트 (v1.0.0)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/step-guide/release-note-step-guide-1.0.0#step-guide-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v100" class="hash-link" aria-label="Step Guide 릴리즈 노트 (v1.0.0)에 대한 직접 링크" title="Step Guide 릴리즈 노트 (v1.0.0)에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="신규-기능">신규 기능<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/step-guide/release-note-step-guide-1.0.0#%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="신규 기능에 대한 직접 링크" title="신규 기능에 대한 직접 링크">​</a></h3>
+<ul>
+<li><strong><a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/step-guide/quick-start">스텝 가이드</a></strong> 기본 기능을 추가하였습니다.</li>
+<li>사용자 가이드를 위한 스텝별 튜토리얼 기능을 제공합니다.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="문서">문서<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/step-guide/release-note-step-guide-1.0.0#%EB%AC%B8%EC%84%9C" class="hash-link" aria-label="문서에 대한 직접 링크" title="문서에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Step Guide의 <strong><a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/step-guide/quick-start">퀵 스타트</a></strong> 문서를 추가하였습니다.</li>
+<li>Step Guide의 <strong><a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/step-guide/options">옵션 설정</a></strong> 문서를 추가하였습니다.</li>
+</ul>]]></content:encoded>
+            <category>Step Guide</category>
+            <category>Feature</category>
+        </item>
+    </channel>
+</rss>
