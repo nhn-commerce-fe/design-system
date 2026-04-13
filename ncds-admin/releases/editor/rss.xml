@@ -14,15 +14,15 @@
             <guid>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/editor/release-note-editor-0.1.0</guid>
             <pubDate>Sun, 28 Jan 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Editor 릴리즈 노트 (v0.1.0)]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="editor-릴리즈-노트-v010">Editor 릴리즈 노트 (v0.1.0)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/editor/release-note-editor-0.1.0#editor-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v010" class="hash-link" aria-label="Editor 릴리즈 노트 (v0.1.0)에 대한 직접 링크" title="Editor 릴리즈 노트 (v0.1.0)에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="신규-기능">신규 기능<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/editor/release-note-editor-0.1.0#%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="신규 기능에 대한 직접 링크" title="신규 기능에 대한 직접 링크">​</a></h3>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_cPhd" id="editor-릴리즈-노트-v010">Editor 릴리즈 노트 (v0.1.0)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/editor/release-note-editor-0.1.0#editor-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v010" class="hash-link" aria-label="Editor 릴리즈 노트 (v0.1.0)에 대한 직접 링크" title="Editor 릴리즈 노트 (v0.1.0)에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_cPhd" id="신규-기능">신규 기능<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/editor/release-note-editor-0.1.0#%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="신규 기능에 대한 직접 링크" title="신규 기능에 대한 직접 링크" translate="no">​</a></h3>
 <ul>
-<li><strong><a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/editor">텍스트 에디터</a></strong> 기본 기능을 추가하였습니다.</li>
-<li>기본적인 텍스트 편집 기능을 제공합니다.</li>
+<li class=""><strong><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/editor">텍스트 에디터</a></strong> 기본 기능을 추가하였습니다.</li>
+<li class="">기본적인 텍스트 편집 기능을 제공합니다.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="문서">문서<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/editor/release-note-editor-0.1.0#%EB%AC%B8%EC%84%9C" class="hash-link" aria-label="문서에 대한 직접 링크" title="문서에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_cPhd" id="문서">문서<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/editor/release-note-editor-0.1.0#%EB%AC%B8%EC%84%9C" class="hash-link" aria-label="문서에 대한 직접 링크" title="문서에 대한 직접 링크" translate="no">​</a></h3>
 <ul>
-<li>Editor의 <strong><a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/editor">소개 및 사용방법</a></strong> 문서를 추가하였습니다.</li>
+<li class="">Editor의 <strong><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/editor">소개 및 사용방법</a></strong> 문서를 추가하였습니다.</li>
 </ul>]]></content:encoded>
             <category>Editor</category>
             <category>Feature</category>

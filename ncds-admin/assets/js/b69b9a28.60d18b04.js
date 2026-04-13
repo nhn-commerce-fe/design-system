@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkncds_admin_docs=self.webpackChunkncds_admin_docs||[]).push([[88490],{78669:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/design-system/ncds-admin/releases/editor","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"NCDS Editor \ub9b4\ub9ac\uc988\ub178\ud2b8","blogTitle":"Editor \ub9b4\ub9ac\uc988\ub178\ud2b8"}}')}}]);
