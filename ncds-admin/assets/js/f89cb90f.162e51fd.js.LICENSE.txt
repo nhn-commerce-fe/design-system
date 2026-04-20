@@ -1,0 +1,5 @@
+/*!
+ * Custom Korean language file for Froala Editor
+ * Based on froala_editor v4.6.0
+ * This file can be customized without modifying node_modules
+ */

@@ -4,10 +4,25 @@
         <title>NCDS Admin Blog</title>
         <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/editor</link>
         <description>NCDS Admin Blog</description>
-        <lastBuildDate>Sun, 28 Jan 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 17 Mar 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[v0.2.0]]></title>
+            <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/editor/release-note-editor-0.2.0</link>
+            <guid>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/editor/release-note-editor-0.2.0</guid>
+            <pubDate>Tue, 17 Mar 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Editor 릴리즈 노트 (v0.2.0)]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="editor-릴리즈-노트-v020">Editor 릴리즈 노트 (v0.2.0)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/editor/release-note-editor-0.2.0#editor-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v020" class="hash-link" aria-label="Editor 릴리즈 노트 (v0.2.0)에 대한 직접 링크" title="Editor 릴리즈 노트 (v0.2.0)에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="개선">개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/editor/release-note-editor-0.2.0#%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="개선에 대한 직접 링크" title="개선에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">NCDS Editor React 버전의 커스텀 스타일을 NCDS 가이드에 맞춰 업데이트하였습니다.</li>
+<li class="">기본 컨테이너 클래스명을 <code>ncds-editor-container</code>로 변경하였습니다.</li>
+</ul>]]></content:encoded>
+            <category>Editor</category>
+            <category>Improvement</category>
+        </item>
         <item>
             <title><![CDATA[v1.0.0]]></title>
             <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/editor/release-note-editor-0.1.0</link>
