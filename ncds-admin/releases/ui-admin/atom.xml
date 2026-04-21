@@ -2,11 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin</id>
     <title>NCDS Admin Blog</title>
-    <updated>2026-04-17T00:00:00.000Z</updated>
+    <updated>2026-04-21T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin"/>
     <subtitle>NCDS Admin Blog</subtitle>
     <icon>https://nhn-commerce-fe.github.io/design-system/ncds-admin/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[v1.8.1]]></title>
+        <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.1</id>
+        <link href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.1"/>
+        <updated>2026-04-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ui-admin 릴리즈 노트 (v1.8.1)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v181">ui-admin 릴리즈 노트 (v1.8.1)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.1#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v181" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.8.1)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.8.1)에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="신규-기능">신규 기능<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.1#%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="신규 기능에 대한 직접 링크" title="신규 기능에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/table">Table</a> / <a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/data-grid">DataGrid</a>에 Radio 선택 모드를 추가하였습니다.<!-- -->
+<ul>
+<li class=""><code>selectionType</code> 옵션으로 <code>'none' | 'checkbox' | 'radio'</code>를 선택할 수 있습니다.</li>
+<li class="">Radio 선택 시 헤더는 비활성 상태로 표시되며, 바디에서는 단일 행만 선택됩니다.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선">기능 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.1#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="기능 개선에 대한 직접 링크" title="기능 개선에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/table">Table</a> / <a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/data-grid">DataGrid</a> 컴포넌트<!-- -->
+<ul>
+<li class="">체크박스·라디오 셀의 수직 정렬 이슈를 수정하였습니다.</li>
+<li class="">fixed-header 모드에서 스크롤바 트랙 오프셋을 조정하였습니다.</li>
+<li class="">선택 셀 로직을 정리하여 중복 렌더링을 제거하였습니다.</li>
+</ul>
+</li>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/combobox">ComboBox</a> 컴포넌트<!-- -->
+<ul>
+<li class="">트레일링 '전체' 버튼이 렌더되지 않던 문제를 수정하였습니다.</li>
+</ul>
+</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[v1.8.0]]></title>
         <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.0</id>
@@ -550,32 +582,6 @@
 <li class="">RangeDatePicker, RangeDatePickerWithBUttons, DatePicker 컴포넌트 스타일이 수정되었습니다.<!-- -->
 <ul>
 <li class="">minDate, maxDate 값이 있을 경우 maxDate의 year 스타일 깨지는 이슈 수정 되었습니다.</li>
-</ul>
-</li>
-</ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[v1.1.1]]></title>
-        <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.1.1</id>
-        <link href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.1.1"/>
-        <updated>2025-07-16T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ui-admin 릴리즈 노트 (v1.1.1)]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v111">ui-admin 릴리즈 노트 (v1.1.1)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.1.1#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v111" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.1.1)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.1.1)에 대한 직접 링크" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선">기능 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.1.1#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="기능 개선에 대한 직접 링크" title="기능 개선에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">RangeDatePickerWithButtons 컴포넌트가 변경되었습니다.<!-- -->
-<ul>
-<li class="">fixedEndDate props 추가 되었습니다.</li>
-<li class="">endDate의 날짜를 고정하는 props 입니다.</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="문서">문서<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.1.1#%EB%AC%B8%EC%84%9C" class="hash-link" aria-label="문서에 대한 직접 링크" title="문서에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">RangeDatePickerWithButtons 문서가 수정 되었습니다.<!-- -->
-<ul>
-<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/range-date-picker-with-buttons#props">fixedEndDate 옵션</a> 추가 되었습니다.</li>
-<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/range-date-picker-with-buttons#%EC%A2%85%EB%A3%8C%EC%9D%BC-%EA%B3%A0%EC%A0%95">종료일 고정</a> 예제 추가 되었습니다.</li>
 </ul>
 </li>
 </ul>]]></content>
