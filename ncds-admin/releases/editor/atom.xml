@@ -2,11 +2,61 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/editor</id>
     <title>NCDS Admin Blog</title>
-    <updated>2026-03-17T00:00:00.000Z</updated>
+    <updated>2026-04-27T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/editor"/>
     <subtitle>NCDS Admin Blog</subtitle>
     <icon>https://nhn-commerce-fe.github.io/design-system/ncds-admin/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[v0.2.1]]></title>
+        <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/editor/release-note-editor-0.2.1</id>
+        <link href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/editor/release-note-editor-0.2.1"/>
+        <updated>2026-04-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Editor 릴리즈 노트 (v0.2.1)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="editor-릴리즈-노트-v021">Editor 릴리즈 노트 (v0.2.1)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/editor/release-note-editor-0.2.1#editor-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v021" class="hash-link" aria-label="Editor 릴리즈 노트 (v0.2.1)에 대한 직접 링크" title="Editor 릴리즈 노트 (v0.2.1)에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="신규-기능">신규 기능<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/editor/release-note-editor-0.2.1#%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="신규 기능에 대한 직접 링크" title="신규 기능에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>반응형 툴바</strong>: 컨테이너 너비에 따라 XS / SM / MD / DEFAULT 4단계 툴바 구성을 자동으로 선택합니다.<!-- -->
+<ul>
+<li class="">768 / 992 / 1200px 브레이크포인트 기반</li>
+<li class="">마운트 시점에 컨테이너 너비를 측정해 적절한 구성을 적용합니다.</li>
+</ul>
+</li>
+<li class=""><strong>CommerceSans 폰트 지원</strong>: 폰트 정의(@font-face 3 weights)와 폰트 패밀리 옵션을 추가하였습니다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선">기능 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/editor/release-note-editor-0.2.1#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="기능 개선에 대한 직접 링크" title="기능 개선에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>아이콘 적용 방식 변경</strong>: Froala 공식 <code>DefineIcon</code> API로 NCDS 아이콘을 등록하도록 변경하였습니다.<!-- -->
+<ul>
+<li class="">Froala 내부 재렌더 시에도 아이콘이 원복되지 않습니다.</li>
+<li class="">iframe / non-iframe 모드 모두에서 일관되게 적용됩니다.</li>
+<li class="">누락되어 있던 아이콘 9종을 보강하였습니다 (<code>alignLeft</code>, <code>alignCenter</code>, <code>alignRight</code>, <code>alignJustify</code>, <code>outdent</code>, <code>indent</code>, <code>subscript</code>, <code>paragraphFormat</code>, <code>pastePlain</code>).</li>
+</ul>
+</li>
+<li class=""><strong>iframe 스타일 통일</strong>: 본문 폰트(나눔고딕), 행간, <code>&lt;p&gt;</code> 여백, NCDS 에디터 CDN CSS를 iframe 내부에 주입하도록 보완하였습니다.</li>
+<li class=""><strong>포커스 그림자 보장</strong>: <code>fr-focused</code> 클래스를 focus/blur 이벤트에서 수동 관리하여 iframe·non-iframe 모드 모두에서 포커스 시 그림자가 정상적으로 표시됩니다.</li>
+<li class=""><strong>콘텐츠 폭 제한·줄바꿈</strong>: 패널 320px / content 296px 최대 너비와 한글 어절 단위 줄바꿈(<code>word-break: keep-all</code>)을 적용하였습니다.</li>
+<li class=""><strong>툴바 구성 정렬</strong>: HTML 버전과 동일한 기본 툴바 구성을 사용하도록 정리하였습니다.</li>
+<li class=""><strong>한국어 번역 정리</strong>: 번역 파일(<code>languages/ko.ts</code>)의 어색한 문구를 자연스럽게 다듬었으며, 단락 포맷 라벨 <code>Code</code>를 실제 출력 태그와 일치하도록 <code>pre</code>로 변경하였습니다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="보안">보안<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/editor/release-note-editor-0.2.1#%EB%B3%B4%EC%95%88" class="hash-link" aria-label="보안에 대한 직접 링크" title="보안에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>HTML 필터링 강화</strong>
+<ul>
+<li class=""><code>htmlAllowedTags</code>를 명시해 Froala 기본 허용 태그 중 위험 태그를 제외하였습니다.<!-- -->
+<ul>
+<li class="">제거 대상: <code>script</code>, <code>base</code>, <code>bdo</code>, <code>dialog</code>, <code>keygen</code>, <code>menuitem</code>, <code>noscript</code>, <code>queue</code>, <code>title</code>, SVG 계열</li>
+<li class="">반응형 이미지 <code>&lt;picture&gt;</code>는 별도로 허용 목록에 추가하였습니다.</li>
+</ul>
+</li>
+<li class=""><code>htmlRemoveTags</code>를 추가해 위험 태그를 태그·내용 모두 완전 제거합니다.</li>
+</ul>
+</li>
+</ul>]]></content>
+        <category label="Editor" term="Editor"/>
+        <category label="Improvement" term="Improvement"/>
+        <category label="security" term="security"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[v0.2.0]]></title>
         <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/editor/release-note-editor-0.2.0</id>

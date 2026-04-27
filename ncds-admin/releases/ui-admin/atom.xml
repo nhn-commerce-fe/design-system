@@ -2,11 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin</id>
     <title>NCDS Admin Blog</title>
-    <updated>2026-04-21T00:00:00.000Z</updated>
+    <updated>2026-04-22T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin"/>
     <subtitle>NCDS Admin Blog</subtitle>
     <icon>https://nhn-commerce-fe.github.io/design-system/ncds-admin/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[v1.8.2]]></title>
+        <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.2</id>
+        <link href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.2"/>
+        <updated>2026-04-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ui-admin 릴리즈 노트 (v1.8.2)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v182">ui-admin 릴리즈 노트 (v1.8.2)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.2#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v182" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.8.2)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.8.2)에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="신규-기능">신규 기능<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.2#%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="신규 기능에 대한 직접 링크" title="신규 기능에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/tooltip">Tooltip</a>에 <code>zIndex</code> prop을 추가하였습니다.<!-- -->
+<ul>
+<li class="">기본값 <code>2000</code>이며, 모달 등 더 높은 stacking context 위에 띄워야 할 때 값을 지정해 오버라이드할 수 있습니다.</li>
+<li class=""><code>--z-index-tooltip</code> 토큰으로 SCSS/CSS 변수화하여 한 곳에서 관리합니다.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선">기능 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.2#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="기능 개선에 대한 직접 링크" title="기능 개선에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/tooltip">Tooltip</a> 컴포넌트<!-- -->
+<ul>
+<li class="">패널을 React Portal로 <code>&lt;body&gt;</code> 하위에 렌더링하도록 전환하여, 부모의 <code>overflow: hidden</code> 및 stacking context 제약에서 자유롭게 동작하도록 개선하였습니다.</li>
+<li class="">패널 최대 너비를 320px(content는 296px)로 제한하고 어절 단위 줄바꿈을 적용하여, 긴 텍스트가 자연스럽게 표시됩니다.</li>
+<li class="">활성(visible) 상태에서만 패널이 마우스 이벤트를 받도록 <code>pointer-events</code>를 분리하여, 숨겨진 패널이 앵커의 hover 이벤트를 가로채던 문제를 해결하였습니다.</li>
+<li class="">포털 분리로 끊겼던 폰트 크기 상속을 <code>__bg</code>에 직접 지정하여 보완하였습니다.</li>
+<li class="">hover 시점에 좌표를 동기로 확정하고 다음 프레임에 재보정하여, 웹폰트 로드·레이아웃 안정화로 인한 위치 밀림을 줄였습니다. <code>requestAnimationFrame</code>은 unmount 시 정리하여 누수를 방지합니다.</li>
+<li class=""><code>resize</code>/<code>scroll</code> 이벤트에 <code>capture</code> 옵션을 맞춰 내부 스크롤 컨테이너에서도 안정적으로 좌표가 갱신됩니다.</li>
+</ul>
+</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[v1.8.1]]></title>
         <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.1</id>
@@ -566,22 +596,6 @@
 <ul>
 <li class="">date picker maxDate 설정시 next 날짜 버튼 노출 처리되었습니다.</li>
 <li class="">range date picker <a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/range-date-picker-with-buttons#%EC%A2%85%EB%A3%8C%EC%9D%BC-%EA%B3%A0%EC%A0%95">기간 제한 옵션 사용 예제</a> 수정 되었습니다.</li>
-</ul>
-</li>
-</ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[v1.1.2]]></title>
-        <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.1.2</id>
-        <link href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.1.2"/>
-        <updated>2025-07-22T09:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ui-admin 릴리즈 노트 (v1.1.2)]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v112">ui-admin 릴리즈 노트 (v1.1.2)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.1.2#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v112" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.1.2)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.1.2)에 대한 직접 링크" translate="no">​</a></h2>
-<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선">기능 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.1.2#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="기능 개선에 대한 직접 링크" title="기능 개선에 대한 직접 링크" translate="no">​</a></h2>
-<ul>
-<li class="">RangeDatePicker, RangeDatePickerWithBUttons, DatePicker 컴포넌트 스타일이 수정되었습니다.<!-- -->
-<ul>
-<li class="">minDate, maxDate 값이 있을 경우 maxDate의 year 스타일 깨지는 이슈 수정 되었습니다.</li>
 </ul>
 </li>
 </ul>]]></content>
