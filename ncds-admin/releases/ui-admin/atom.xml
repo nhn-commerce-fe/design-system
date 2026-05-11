@@ -2,11 +2,56 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin</id>
     <title>NCDS Admin Blog</title>
-    <updated>2026-05-08T00:00:00.000Z</updated>
+    <updated>2026-05-11T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin"/>
     <subtitle>NCDS Admin Blog</subtitle>
     <icon>https://nhn-commerce-fe.github.io/design-system/ncds-admin/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[v1.8.4]]></title>
+        <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.4</id>
+        <link href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.4"/>
+        <updated>2026-05-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ui-admin 릴리즈 노트 (v1.8.4)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v184">ui-admin 릴리즈 노트 (v1.8.4)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.4#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v184" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.8.4)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.8.4)에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="신규-기능">신규 기능<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.4#%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="신규 기능에 대한 직접 링크" title="신규 기능에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/block-header">BlockHeader</a> 컴포넌트를 추가하였습니다.<!-- -->
+<ul>
+<li class="">블록 영역의 헤더로 사용하는 <code>&lt;header&gt;</code> 시맨틱 마크업 기반 컴포넌트입니다.</li>
+<li class="">제목 우측에 툴팁(<code>tooltip</code>), 배지(<code>badge</code>), 액션 버튼(<code>action</code>)을 배치할 수 있습니다.</li>
+<li class=""><code>showRequiredNotice</code> prop을 활성화하면 헤더 우측에 <code>* 는 필수 입력 항목입니다.</code> 안내 문구가 표시됩니다.</li>
+<li class=""><code>collapsible</code> prop으로 블록 전체를 접기/펼치기 토글할 수 있으며, 접힌 상태에서는 하단 구분선이 자동으로 숨겨집니다.</li>
+<li class=""><code>description</code> prop이 있으면 컬럼 레이아웃으로 전환되어 제목 아래에 설명 문구가 표시됩니다.</li>
+<li class=""><code>controlStrip</code> 슬롯으로 필터·검색 등 컨트롤 영역을, <code>children</code>으로 탭 컴포넌트를 헤더 하단에 배치할 수 있습니다.</li>
+<li class=""><code>showDivider</code> (기본값 <code>true</code>) prop으로 하단 구분선 표시 여부를 제어합니다.</li>
+</ul>
+</li>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/block-header">BlockHeader</a> 의 <code>BlockHeader.SubTitle</code> 서브 컴포넌트를 추가하였습니다.<!-- -->
+<ul>
+<li class="">블록 바디 내부의 소제목 영역에 사용합니다.</li>
+<li class=""><code>size</code> prop으로 <code>'xs'</code> / <code>'sm'</code> (기본값) / <code>'middle'</code> 세 가지 크기를 지원합니다.</li>
+<li class=""><code>required</code> prop 활성화 시 제목 앞에 필수 마커(<code>*</code>)가 표시됩니다.</li>
+<li class=""><code>tooltip</code>, <code>description</code>, <code>error</code>, <code>action</code> prop을 지원합니다.</li>
+</ul>
+</li>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/block-container">BlockContainer</a> 컴포넌트를 추가하였습니다.<!-- -->
+<ul>
+<li class=""><code>&lt;section&gt;</code> 시맨틱 마크업 기반의 블록 레이아웃 컨테이너입니다.</li>
+<li class="">Compound Component 구조로 <code>BlockContainer</code>, <code>BlockContainer.Body</code> 두 서브 컴포넌트로 구성됩니다.</li>
+</ul>
+</li>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/page-title">PageTitle</a> 컴포넌트를 추가하였습니다.<!-- -->
+<ul>
+<li class="">페이지 최상단 제목 영역에 사용하는 <code>&lt;header&gt;</code> 시맨틱 마크업 기반 컴포넌트입니다.</li>
+<li class=""><code>variant</code> prop으로 <code>'default'</code> / <code>'detail'</code> / <code>'fixed'</code> / <code>'fixed-detail'</code> 네 가지 레이아웃을 지원합니다.</li>
+<li class=""><code>detail</code> 계열 variant에서 <code>onBack</code> prop을 전달하면 제목 좌측에 뒤로가기 버튼이 표시됩니다.</li>
+<li class=""><code>breadcrumbItems</code> prop으로 브레드크럼 내비게이션을 표시할 수 있습니다 (<code>fixed</code> 계열에서는 숨김).</li>
+<li class=""><code>guideButton</code>, <code>primaryAction</code>, <code>secondaryAction</code> prop으로 제목 영역의 가이드 버튼 및 우측 액션 버튼을 배치할 수 있습니다.</li>
+</ul>
+</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[v1.8.3]]></title>
         <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.3</id>
@@ -604,30 +649,6 @@
 <li class="">solid 타입의 아이콘이 추가되었습니다. (<a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/icon">아이콘 문서 참고</a>)</li>
 </ul>
 </li>
-</ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[v1.2.0]]></title>
-        <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.2.0</id>
-        <link href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.2.0"/>
-        <updated>2025-07-28T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ui-admin 릴리즈 노트 (v1.2.0)]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v120">ui-admin 릴리즈 노트 (v1.2.0)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.2.0#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v120" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.2.0)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.2.0)에 대한 직접 링크" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="신규-기능">신규 기능<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.2.0#%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="신규 기능에 대한 직접 링크" title="신규 기능에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class=""><code>FileInput</code> 컴포넌트를 추가하였습니다.</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선">기능 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.2.0#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="기능 개선에 대한 직접 링크" title="기능 개선에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class=""><code>@ncds/ui-admin-icon</code> 의존성의 버전을 0.0.17 로 업데이트하였습니다.<!-- -->
-<ul>
-<li class="">아이콘 컴포넌트 동적 로딩이 최적화되었습니다.</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="문서">문서<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.2.0#%EB%AC%B8%EC%84%9C" class="hash-link" aria-label="문서에 대한 직접 링크" title="문서에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class=""><code>FileInput</code> <a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/input#%ED%8C%8C%EC%9D%BC-%EC%9E%85%EB%A0%A5-%ED%95%84%EB%93%9C">컴포넌트 데모</a>를 추가하였습니다.</li>
 </ul>]]></content>
     </entry>
 </feed>
