@@ -4,10 +4,77 @@
         <title>NCDS Admin Blog</title>
         <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin</link>
         <description>NCDS Admin Blog</description>
-        <lastBuildDate>Mon, 11 May 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 21 May 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[v1.8.5]]></title>
+            <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.5</link>
+            <guid>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.5</guid>
+            <pubDate>Thu, 21 May 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[ui-admin 릴리즈 노트 (v1.8.5)]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v185">ui-admin 릴리즈 노트 (v1.8.5)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.5#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v185" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.8.5)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.8.5)에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="신규-기능">신규 기능<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.5#%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="신규 기능에 대한 직접 링크" title="신규 기능에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/combobox">ComboBox</a>, <a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/selectbox">SelectBox</a> 에 <code>maxSelection</code> prop 을 추가하였습니다.<!-- -->
+<ul>
+<li class=""><code>multiple=true</code> 일 때만 유효한 옵션으로, 최대 선택 가능 개수를 제한합니다.</li>
+<li class=""><code>0</code> 이상의 정수: 제한 활성 → footer 의 "전체 선택" Link 가 미노출됩니다.<!-- -->
+<ul>
+<li class=""><code>0</code> 은 모든 새 선택을 차단합니다.</li>
+<li class="">양수는 도달 후 추가 선택을 무시합니다 (이미 선택된 항목의 해제는 정상 동작).</li>
+</ul>
+</li>
+<li class="">음수 / 비정수 / <code>null</code> / <code>undefined</code>: 제한 없음 (기존 동작과 동일).</li>
+<li class="">React 컴포넌트와 vanilla(<code>&lt;div data-target&gt;</code> 기반) 양쪽에 동일하게 적용됩니다.</li>
+</ul>
+</li>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/tooltip">Tooltip</a> 의 vanilla 빌드에 <code>iconColor</code> 옵션을 추가하였습니다.<!-- -->
+<ul>
+<li class="">기존 React API 와 대칭이 되도록 vanilla 측에도 동일 옵션을 노출하여, 트리거 아이콘의 색상을 직접 지정할 수 있습니다.</li>
+<li class="">타이틀 + 메시지 색상이 gray-500으로 변경 / 굵기 타이틀 700, 메시지 400 으로 변경되었습니다.</li>
+</ul>
+</li>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/notification">Notification</a> 에 floating(우측 상단 자동 노출 + LIFO 스택) 동작을 추가하였습니다.<!-- -->
+<ul>
+<li class="">새 알림이 등장하면 우측 상단으로 자동 진입하고, 여러 개가 동시에 떠 있을 때 LIFO(가장 최근 알림이 위) 순으로 스택됩니다.</li>
+</ul>
+</li>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/notification">Notification</a> 에 <code>callout</code> 유형을 추가하였습니다.<!-- -->
+<ul>
+<li class="">기존 인라인 알림에 덧붙여, <code>type="callout"</code> 으로 호출박스 스타일의 알림을 렌더할 수 있습니다.</li>
+<li class="">5가지 색상 변형을 지원합니다: <code>neutral</code> (기본), <code>info</code>, <code>warning</code>, <code>error</code>, <code>success</code>.</li>
+</ul>
+</li>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/table">Table</a> 과 <a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/data-grid">DataGrid</a> 에 가로 스크롤을 지원하도록 개선하였습니다.<!-- -->
+<ul>
+<li class=""><code>horizontalScroll</code> prop 으로 활성화하면 컬럼이 많을 때 가로 스크롤 기능을 사용할 수 있습니다.</li>
+<li class=""><code>minWidth</code> prop 으로 스크롤 발생 최소 너비를 지정할 수 있습니다 (기본값: <code>1140px</code>).</li>
+<li class="">표 내부의 SelectBox·Dropdown 은 자동으로 Portal 모드로 전환되어 <code>overflow:hidden</code> 경계에 잘리지 않습니다.</li>
+<li class=""><code>fixedHeader</code> + <code>horizontalScroll</code> 을 동시에 사용할 수 있으며, 세로 스크롤바는 우측에 고정됩니다.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선">기능 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.5#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="기능 개선에 대한 직접 링크" title="기능 개선에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/tooltip">Tooltip</a> 의 long type 레이아웃 정합성을 보정하였습니다.<!-- -->
+<ul>
+<li class="">닫기 버튼(<code>__close-button</code>) 위치를 <code>top: 2px</code>, <code>right: 2px</code> 단일 값으로 고정 (기존 케이스별 override 정리).</li>
+<li class="">닫기 버튼이 있을 때 panel padding 을 <code>상하 8px · 좌우 12px · 우측 28px</code> 로 통일하여 모든 줄이 닫기 버튼 영역을 침범하지 않도록 조정.</li>
+<li class=""><code>__title</code> / <code>__content</code> 의 <code>line-height</code> 를 <code>var(--line-heights-xxs)</code> (16px) 로 동기화.</li>
+<li class="">공백 없이 붙은 긴 텍스트(URL · 한글 무공백 등)가 panel <code>max-width</code> 를 침범하지 않도록 <code>overflow-wrap: anywhere</code> 등을 추가.</li>
+<li class=""><code>width: max-content</code> 가 <code>max-width</code> 와 충돌해 wrap 이 일어나지 않던 케이스를 <code>fit-content</code> + <code>min-width: 0</code> 조합으로 정리.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="버그-수정">버그 수정<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.5#%EB%B2%84%EA%B7%B8-%EC%88%98%EC%A0%95" class="hash-link" aria-label="버그 수정에 대한 직접 링크" title="버그 수정에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">ui-admin 도큐사우루스 문서 페이지의 <a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/tooltip">데모 영역에서 아이콘이 제대로 표시되지 않던 현상</a>을 수정하였습니다.</li>
+<li class="">컴포넌트 전반에 사용되는 <code>z-index</code> 값을 재정렬하여 레이어 충돌을 정돈하였습니다.</li>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/table">Table</a> 에서 정의되지 않은 <code>font-weight</code> CSS 변수를 참조하던 부분을 수정하였습니다.</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[v1.8.4]]></title>
             <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.4</link>
@@ -634,22 +701,6 @@
 </ul>
 </li>
 <li class="">rangeDatePicker, rangeDatePickerWithButton <a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/range-date-picker-with-buttons#size-%EC%98%88%EC%8B%9C">size</a> 관련 문서를 수정했습니다.</li>
-</ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[v1.2.1]]></title>
-            <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.2.1</link>
-            <guid>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.2.1</guid>
-            <pubDate>Fri, 01 Aug 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[ui-admin 릴리즈 노트 (v1.2.1)]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v121">ui-admin 릴리즈 노트 (v1.2.1)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.2.1#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v121" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.2.1)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.2.1)에 대한 직접 링크" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선">기능 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.2.1#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="기능 개선에 대한 직접 링크" title="기능 개선에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class=""><code>@ncds/ui-admin-icon</code> 의존성의 버전을 0.1.1 로 업데이트하였습니다.<!-- -->
-<ul>
-<li class="">solid 타입의 아이콘이 추가되었습니다. (<a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/icon">아이콘 문서 참고</a>)</li>
-</ul>
-</li>
 </ul>]]></content:encoded>
         </item>
     </channel>
