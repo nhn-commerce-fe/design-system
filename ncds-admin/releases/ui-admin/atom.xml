@@ -2,11 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin</id>
     <title>NCDS Admin Blog</title>
-    <updated>2026-05-22T00:00:00.000Z</updated>
+    <updated>2026-05-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin"/>
     <subtitle>NCDS Admin Blog</subtitle>
     <icon>https://nhn-commerce-fe.github.io/design-system/ncds-admin/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[v1.8.7]]></title>
+        <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.7</id>
+        <link href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.7"/>
+        <updated>2026-05-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ui-admin 릴리즈 노트 (v1.8.7)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v187">ui-admin 릴리즈 노트 (v1.8.7)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.7#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v187" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.8.7)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.8.7)에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="버그-수정">버그 수정<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.7#%EB%B2%84%EA%B7%B8-%EC%88%98%EC%A0%95" class="hash-link" aria-label="버그 수정에 대한 직접 링크" title="버그 수정에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/tooltip">Tooltip</a> 을 inline 으로 (좁은 부모 span 안에) 사용할 때 패널 내부 텍스트가 한 글자씩 세로로 wrap 되어 표시되던 현상을 수정하였습니다.<!-- -->
+<ul>
+<li class="">Portal 모드(기본)에서는 동작이 변하지 않으며 disablePortal/inline 사용 케이스만 영향을 받습니다.</li>
+</ul>
+</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[v1.8.6]]></title>
         <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.6</id>
@@ -589,97 +605,6 @@
 <li class="">string -&gt; ReactNode</li>
 </ul>
 </li>
-</ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[v1.4.0]]></title>
-        <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.4.0</id>
-        <link href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.4.0"/>
-        <updated>2025-11-21T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ui-admin 릴리즈 노트 (v1.4.0)]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v140">ui-admin 릴리즈 노트 (v1.4.0)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.4.0#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v140" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.4.0)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.4.0)에 대한 직접 링크" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="신규-기능">신규 기능<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.4.0#%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="신규 기능에 대한 직접 링크" title="신규 기능에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">Input 컴포넌트에 showTextCount Props를 추가하였습니다.<!-- -->
-<ul>
-<li class="">인풋 오른쪽에 텍스트 카운트 표시 여부를 선택할 수 있습니다.</li>
-</ul>
-</li>
-<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/selectbox">SelectBox 컴포넌트</a>를 추가하였습니다.</li>
-<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/combobox">ComboBox 컴포넌트</a>를 추가하였습니다.</li>
-<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/switch">Switch 컴포넌트</a>를 추가하였습니다.</li>
-<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/file-input">FileInput 컴포넌트</a>를 추가하였습니다.</li>
-<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/image-file-input">ImageFileInput 컴포넌트</a>를 추가하였습니다.</li>
-<li class="">ui-admin-icon (dots-grid-02, flag-jp, flag-kr, flag-ch, flag-en, clock, clock-fast-forward, calendar) 업데이트했습니다.</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선">기능 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.4.0#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="기능 개선에 대한 직접 링크" title="기능 개선에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">보라색 계열 스타일 변수값을 추가하였습니다.<!-- -->
-<ul>
-<li class="">violet 50, 100, 200, 300, 400, 500, 600, 700</li>
-</ul>
-</li>
-<li class="">Button 컴포넌트의 hierarchy 수정, as 삭제 및 underline 추가하였습니다.<!-- -->
-<ul>
-<li class="">hierarchy : link 대신 text로 대체하였습니다. text-red 타입을 추가하였습니다.</li>
-<li class="">as: 버튼의 역할만 제공하기 위해서 제거하였습니다.</li>
-<li class="">underline: text hierarchy 외에 텍스트에 언더라인 스타일 추가되도록 props를 추가하였습니다.</li>
-</ul>
-</li>
-<li class="">ButtonGroup 컴포넌트에서 Button 컴포넌트 사용영역 props 업데이트건 반영하였습니다.</li>
-<li class="">DatePicker 컴포넌트를 수정하였습니다.<!-- -->
-<ul>
-<li class="">인풋창에 날짜와 시간을 입력할 수 있도록 수정하였습니다.</li>
-<li class="">시간만 설정할 수 있도록 수정하였습니다.</li>
-</ul>
-</li>
-<li class="">Horizontal Tab 컴포넌트를 수정하였습니다.<!-- -->
-<ul>
-<li class="">onCloseClick props를 추가하였습니다.</li>
-<li class="">onClick props가 menus props의 객체 내부로 이동하였습니다.</li>
-<li class="">menus props의 객체 구조를 수정하였습니다.</li>
-</ul>
-</li>
-<li class="">Pagination 컴포넌트에서 Button 컴포넌트 사용영역 props 업데이트건 반영하였습니다.</li>
-<li class="">Radio, Checkbox 컴포넌트의 react-hook-form 이슈를 수정하였습니다.<!-- -->
-<ul>
-<li class="">register props를 제거하였습니다.</li>
-<li class="">ref를 제대로 전달하지 못하는 이슈가 있어서 컴포넌트의 구조를 개선하였습니다.</li>
-</ul>
-</li>
-<li class="">Modal 컴포넌트를 수정하였습니다.</li>
-<li class="">Notification 컴포넌트를 수정하였습니다.<!-- -->
-<ul>
-<li class="">autoClose 기능이 추가되었습니다.</li>
-<li class="">supportTextLink / onHidePermanently : 링크 및 다시보지 않기 기능이 추가되었습니다.</li>
-<li class="">full-width / info type이 추가되었습니다.</li>
-</ul>
-</li>
-<li class="">ProgressBar 컴포넌트의 props를 추가하였습니다.<!-- -->
-<ul>
-<li class="">valueToPercent : value를 퍼센트로 변환하는 기능이 추가되었습니다.</li>
-<li class="">segments 옵션 : 다중 progressBar 옵션이 추가되었습니다.</li>
-</ul>
-</li>
-<li class="">Textarea 컴포넌트 영역의 높이가 조정 가능하도록 수정하였습니다.</li>
-<li class="">Tooltip 컴포넌트 수정<!-- -->
-<ul>
-<li class="">positioning auto : 화면 위치에 따라 툴팁의 위치가 자동 조정 됩니다 (default: top)</li>
-<li class="">short/long type 추가</li>
-</ul>
-</li>
-<li class="">Tag 컴포넌트 수정<!-- -->
-<ul>
-<li class="">tag 컴포넌트 내 글자 크기가 maxLength를 넘을 경우 마우스호버 시 툴팁형태로 노출됩니다.</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="문서">문서<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.4.0#%EB%AC%B8%EC%84%9C" class="hash-link" aria-label="문서에 대한 직접 링크" title="문서에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">ComboBox 컴포넌트의 가이드 문서를 추가하였습니다.</li>
-<li class="">SelectBox 컴포넌트의 가이드 문서를 추가하였습니다.</li>
-<li class="">FileInput 컴포넌트의 가이드 문서를 추가하였습니다.</li>
-<li class="">ImageFileInput 컴포넌트의 가이드 문서를 추가하였습니다.</li>
 </ul>]]></content>
     </entry>
 </feed>
