@@ -2,11 +2,56 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin</id>
     <title>NCDS Admin Blog</title>
-    <updated>2026-05-26T00:00:00.000Z</updated>
+    <updated>2026-06-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin"/>
     <subtitle>NCDS Admin Blog</subtitle>
     <icon>https://nhn-commerce-fe.github.io/design-system/ncds-admin/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[v1.8.8]]></title>
+        <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.8</id>
+        <link href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.8"/>
+        <updated>2026-06-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ui-admin 릴리즈 노트 (v1.8.8)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v188">ui-admin 릴리즈 노트 (v1.8.8)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.8#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v188" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.8.8)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.8.8)에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="신규-기능">신규 기능<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.8#%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="신규 기능에 대한 직접 링크" title="신규 기능에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/table">Table</a> 의 셀에 Tooltip 합성을 지원하도록 개선하였습니다.<!-- -->
+<ul>
+<li class=""><code>Table.Cell</code> 에 <code>tooltip</code> prop 을 추가하여 셀 내부에 인라인 Tooltip 을 표시할 수 있습니다.</li>
+<li class="">세로형 레이아웃의 라벨 셀에 Tooltip · Required 표시 등 자식 요소를 함께 합성할 때, 텍스트와 아이콘이 시각적으로 일관되게 정렬되도록 보정하였습니다.</li>
+</ul>
+</li>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/combobox">ComboBox</a> · <a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/selectbox">SelectBox</a> 의 다중 선택 모드에서 "선택 완료" 버튼 클릭 시 호출되는 <code>onComplete</code> 콜백을 React 컴포넌트에서도 사용할 수 있도록 추가하였습니다.<!-- -->
+<ul>
+<li class="">HTML · React 양쪽 모두 콜백 인자로 현재 선택된 값(들)을 전달받도록 시그니처를 <code>(value: string | number | (string | number)[]) =&gt; void</code> 로 통일하였습니다.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="버그-수정">버그 수정<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.8#%EB%B2%84%EA%B7%B8-%EC%88%98%EC%A0%95" class="hash-link" aria-label="버그 수정에 대한 직접 링크" title="버그 수정에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/table">Table</a> 에서 <code>fixedHeader</code> 와 <code>horizontalScroll</code> 을 동시에 사용할 때 세로 스크롤바가 잘못 표시되던 현상을 수정하였습니다.<!-- -->
+<ul>
+<li class=""><code>horizontalScroll</code> 토글 시 세로 스크롤바가 다시 바인딩되지 않아 고아 thumb 가 남던 문제와, 세로 thumb 높이가 실제 스크롤 트랙보다 작게 계산되던 문제를 함께 수정하였습니다.</li>
+</ul>
+</li>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/icon">아이콘 카탈로그</a> 페이지의 사이즈 필터에서 누락되어 있던 12px · 14px 옵션을 복원하였습니다.<!-- -->
+<ul>
+<li class="">문서 페이지 UX 개편 과정에서 빠졌던 두 옵션을 다시 추가하여 기존 7개 사이즈 선택지를 모두 사용할 수 있습니다.</li>
+</ul>
+</li>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/image-file-input">ImageFileInput</a> 에서 <code>showFileInput</code> 을 <code>false</code> 로 설정하면 파일 첨부가 동작하지 않던 현상을 수정하였습니다.<!-- -->
+<ul>
+<li class="">숨김 파일 input 이 <code>showFileInput</code> 조건 내부에서만 렌더되어, 이미지 프리뷰 빈 슬롯을 클릭해도 파일 선택 창이 열리지 않던 문제를 수정하였습니다. (기본값 <code>true</code> 사용 시 동작·DOM 변화 없음)</li>
+</ul>
+</li>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/image-file-input">ImageFileInput</a> 의 이미지 업로드 슬롯 Tooltip 이 <a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/table">Table</a> 셀 등 overflow 영역 안에서 잘리던 현상을 수정하였습니다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="환경">환경<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.8#%ED%99%98%EA%B2%BD" class="hash-link" aria-label="환경에 대한 직접 링크" title="환경에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><code>@ncds/ui-admin-mcp</code> 의 Node.js 요구 버전을 22 이상으로 상향하였습니다.</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[v1.8.7]]></title>
         <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.7</id>
@@ -561,50 +606,6 @@
 </ul>
 </li>
 <li class="">HorizontalTab의 button-white, button-primary 스타일 일부를 수정하였습니다.</li>
-</ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[v1.5.0]]></title>
-        <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.0</id>
-        <link href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.0"/>
-        <updated>2026-01-20T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ui-admin 릴리즈 노트 (v1.5.0)]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v150">ui-admin 릴리즈 노트 (v1.5.0)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.0#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v150" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.5.0)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.5.0)에 대한 직접 링크" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="신규-기능">신규 기능<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.0#%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="신규 기능에 대한 직접 링크" title="신규 기능에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">Tooltip 컴포넌트의 props를 추가했습니다.<!-- -->
-<ul>
-<li class="">iconColor, iconStyle</li>
-</ul>
-</li>
-<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/number-input">NumberInput 컴포넌트</a>를 추가하였습니다.<!-- -->
-<ul>
-<li class="">input의 number 타입을 대체하여 사용가능한 컴포넌트를 추가하였습니다.</li>
-</ul>
-</li>
-<li class="">Notification 컴포넌트의 type props의 타입을 추가하였습니다.<!-- -->
-<ul>
-<li class="">message 타입을 추가하였습니다.</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선">기능 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.0#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="기능 개선에 대한 직접 링크" title="기능 개선에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">Datepicker 컴포넌트의 오류를 수정하였습니다.<!-- -->
-<ul>
-<li class="">0000-00-00으로 setDate()입력시 오류 데이터 노출 이슈 수정 했습니다. (빈 값으로 노출 처리) (Html)</li>
-<li class="">날짜 포멧이 아닐 경우 빈 값으로 노출 처리 되도록 수정 했습니다. (Html)</li>
-<li class="">시간 사용시 시작 시간은 00:00:00 종료 시간은 23:59:59로 자동 설정 되도록 수정 했습니다.(React, Html)</li>
-<li class="">datePickerOptions가 1개 이고 buttons가 없을우경우 date설정이 datePickerOptions 갯수 만큼 노출 되도록 수정 했습니다.(Html)</li>
-<li class="">시간 입력시 다음 시간 입력 후 마우스로 외부 클릭시 입력 시간 반영 안되는 이슈 수정 했습니다. (React, Html)</li>
-<li class="">fixedEndDate prop명을 useYesterdayAsEndDate으로 변경, 가이드 문서 수정 했습니다. (React)</li>
-</ul>
-</li>
-<li class="">Tooltip 컴포넌트의 content props 타입을 수정하였습니다. (React)<!-- -->
-<ul>
-<li class="">string -&gt; ReactNode</li>
-</ul>
-</li>
 </ul>]]></content>
     </entry>
 </feed>
