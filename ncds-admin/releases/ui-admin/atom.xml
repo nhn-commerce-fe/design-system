@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin</id>
     <title>NCDS Admin Blog</title>
-    <updated>2026-06-05T00:00:00.000Z</updated>
+    <updated>2026-06-10T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin"/>
     <subtitle>NCDS Admin Blog</subtitle>
     <icon>https://nhn-commerce-fe.github.io/design-system/ncds-admin/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[v1.8.9]]></title>
+        <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.9</id>
+        <link href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.9"/>
+        <updated>2026-06-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ui-admin 릴리즈 노트 (v1.8.9)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v189">ui-admin 릴리즈 노트 (v1.8.9)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.9#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v189" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.8.9)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.8.9)에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="신규-기능">신규 기능<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.9#%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="신규 기능에 대한 직접 링크" title="신규 기능에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/badge">Badge</a> 에 <code>new-badge</code> 타입을 추가하였습니다.<!-- -->
+<ul>
+<li class="">신규 콘텐츠를 표시하는 N 마크 배지로, <code>@ncds/ui-admin-icon</code> 의 <code>new</code> 아이콘을 활용합니다.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="버그-수정">버그 수정<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.9#%EB%B2%84%EA%B7%B8-%EC%88%98%EC%A0%95" class="hash-link" aria-label="버그 수정에 대한 직접 링크" title="버그 수정에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/image-file-input">ImageFileInput</a> 에서 <code>onFail</code> 콜백으로 전달되는 <code>InvalidFile</code> 의 <code>size</code> · <code>name</code> · <code>type</code> 이 <code>undefined</code> 로 전달되던 현상을 수정하였습니다.<!-- -->
+<ul>
+<li class=""><code>File</code> 객체를 스프레드(<code>{...file}</code>)하면 프로토타입 getter 가 복사되지 않는 문제로, <code>toInvalidFile()</code> 헬퍼로 각 속성을 명시적으로 복사하도록 수정하였습니다.</li>
+</ul>
+</li>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/table">Table</a> 에서 세로형(vertical) 테이블 내부에 가로형(horizontal) 테이블을 중첩할 때 헤더 셀 스타일이 내부 테이블로 오염되던 현상을 수정하였습니다.<!-- -->
+<ul>
+<li class=""><code>.ncua-table--vertical</code> 의 하위 선택자가 내부 테이블의 <code>th</code> 까지 영향을 미치던 문제를 수정하였습니다.</li>
+</ul>
+</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[v1.8.8]]></title>
         <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.8</id>
@@ -578,34 +607,6 @@
 <h3 class="anchor anchorTargetStickyNavbar_ArNF" id="문서">문서<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.2#%EB%AC%B8%EC%84%9C" class="hash-link" aria-label="문서에 대한 직접 링크" title="문서에 대한 직접 링크" translate="no">​</a></h3>
 <ul>
 <li class="">DatePicker, RangeDatePicker, RangeDatePickerWithButtons 컴포넌트의 가이드 문서 예제 코드 수정 및 onValidationError 예제를 추가하였습니다.</li>
-</ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[v1.5.1]]></title>
-        <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.1</id>
-        <link href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.1"/>
-        <updated>2026-02-06T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ui-admin 릴리즈 노트 (v1.5.1)]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v151">ui-admin 릴리즈 노트 (v1.5.1)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.1#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v151" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.5.1)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.5.1)에 대한 직접 링크" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선">기능 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.1#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="기능 개선에 대한 직접 링크" title="기능 개선에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">modal의 title, subtitle의 타입, css 수정하였습니다.<!-- -->
-<ul>
-<li class="">modal의 title 타입에 ReactNode 추가하였습니다.</li>
-<li class="">css에 white-space: pre-line 추가하였습니다.</li>
-</ul>
-</li>
-<li class="">passwordInput 컴포넌트의 버튼 타입을 추가하였습니다.<!-- -->
-<ul>
-<li class="">비밀번호 보기, 숨기기 버튼의 타입을 Button으로 추가하였습니다.</li>
-</ul>
-</li>
-<li class="">buttonStepper 컴포넌트의 타입을 수정하였습니다.<!-- -->
-<ul>
-<li class="">버튼 타입을 Button 으로 추가하였습니다.</li>
-</ul>
-</li>
-<li class="">HorizontalTab의 button-white, button-primary 스타일 일부를 수정하였습니다.</li>
 </ul>]]></content>
     </entry>
 </feed>
