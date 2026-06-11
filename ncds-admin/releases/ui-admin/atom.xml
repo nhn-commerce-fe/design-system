@@ -2,11 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin</id>
     <title>NCDS Admin Blog</title>
-    <updated>2026-06-10T00:00:00.000Z</updated>
+    <updated>2026-06-11T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin"/>
     <subtitle>NCDS Admin Blog</subtitle>
     <icon>https://nhn-commerce-fe.github.io/design-system/ncds-admin/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[v1.8.10]]></title>
+        <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.10</id>
+        <link href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.10"/>
+        <updated>2026-06-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ui-admin 릴리즈 노트 (v1.8.10)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v1810">ui-admin 릴리즈 노트 (v1.8.10)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.10#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v1810" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.8.10)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.8.10)에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선">기능 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.10#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="기능 개선에 대한 직접 링크" title="기능 개선에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">기간 datepicker 초기화 시 종료일이 비워지지 않는 문제 수정
+setMultipleDates가 빈 값(초기화)에도 마지막 입력에 onChange를 발화시켜,
+createOnChangeHandler의 복원 분기가 stale한 _previousDateBeforeInput으로
+종료일을 되돌렸다. 빈 값일 때는 onChange를 발화하지 않도록 수정.<!-- -->
+<ul>
+<li class="">케이스 1: 초기화 시 종료일 미초기화 → 해결</li>
+<li class="">케이스 2: 종료일 수동 삭제 후 초기화 시 이전 값 복원 → 해결</li>
+</ul>
+</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[v1.8.9]]></title>
         <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.9</id>
@@ -576,37 +596,6 @@
 <h3 class="anchor anchorTargetStickyNavbar_ArNF" id="스타일-개선">스타일 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.3#%EC%8A%A4%ED%83%80%EC%9D%BC-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="스타일 개선에 대한 직접 링크" title="스타일 개선에 대한 직접 링크" translate="no">​</a></h3>
 <ul>
 <li class="">FileInput 컴포넌트의 힌트 스타일을 기존 1.5.1 버전 이하의 스타일로 복구하였습니다.</li>
-</ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[v1.5.2]]></title>
-        <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.2</id>
-        <link href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.2"/>
-        <updated>2026-02-19T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ui-admin 릴리즈 노트 (v1.5.2)]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v152">ui-admin 릴리즈 노트 (v1.5.2)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.2#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v152" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.5.2)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.5.2)에 대한 직접 링크" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선">기능 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.2#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="기능 개선에 대한 직접 링크" title="기능 개선에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">Pagination 컴포넌트의 모바일 예제 이전,다음버튼의 이슈를 수정하였습니다.</li>
-<li class="">Datepicker 컴포넌트를 수정하였습니다.<!-- -->
-<ul>
-<li class="">minDate, maxDate가 있고 allowInput: true(직접 입력) 일 경우 범위 벗어나는 이슈를 수정하였습니다.</li>
-<li class="">onValidationError 메서드를 옵션으로 추가 validation오류 일 경우 사용처에서 처리 가능하도록 추가 하였습니다. (react, html)</li>
-<li class="">날짜 시간 형식이 아닐 경우 입력 안되도록 수정 하였습니다.</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="스타일-개선">스타일 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.2#%EC%8A%A4%ED%83%80%EC%9D%BC-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="스타일 개선에 대한 직접 링크" title="스타일 개선에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">FileInput 컴포넌트의 스타일을 개선하였습니다.<!-- -->
-<ul>
-<li class="">힌트 텍스트 영역의 dot 스타일을 수정하였습니다.</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="문서">문서<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.2#%EB%AC%B8%EC%84%9C" class="hash-link" aria-label="문서에 대한 직접 링크" title="문서에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">DatePicker, RangeDatePicker, RangeDatePickerWithButtons 컴포넌트의 가이드 문서 예제 코드 수정 및 onValidationError 예제를 추가하였습니다.</li>
 </ul>]]></content>
     </entry>
 </feed>
