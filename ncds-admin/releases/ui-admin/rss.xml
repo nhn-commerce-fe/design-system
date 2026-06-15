@@ -4,10 +4,43 @@
         <title>NCDS Admin Blog</title>
         <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin</link>
         <description>NCDS Admin Blog</description>
-        <lastBuildDate>Thu, 11 Jun 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 12 Jun 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[v1.8.11]]></title>
+            <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.11</link>
+            <guid>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.11</guid>
+            <pubDate>Fri, 12 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[ui-admin 릴리즈 노트 (v1.8.11)]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v1811">ui-admin 릴리즈 노트 (v1.8.11)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.11#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v1811" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.8.11)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.8.11)에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="신규-기능">신규 기능<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.11#%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="신규 기능에 대한 직접 링크" title="신규 기능에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">페이지 전체의 작업 컨텍스트(scope)를 전환하는 가로 탭 컴포넌트 <a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/context-tab">ContextTab</a> 을 추가하였습니다.<!-- -->
+<ul>
+<li class="">다중 쇼핑몰 · 다중 계정 · 다중 워크스페이스처럼 여러 컨텍스트를 운영하는 어드민에서, 페이지 데이터 · 설정의 적용 대상을 바꾸는 데 사용합니다.</li>
+<li class="">좌측 ☰ 버튼으로 전체 목록 Dropdown 을, 우측 <code>&lt;</code> <code>&gt;</code> 버튼으로 7개 단위 페이지 넘김(Slider Navigation)을 함께 제공합니다.</li>
+<li class="">각 컨텍스트에 신규 표시(<code>isNew</code>, N 배지)와 임의 텍스트 배지(<code>badgeLabel</code>, pill-outline)를 붙일 수 있으며, 긴 이름은 말줄임 처리되고 마우스를 올리면 전체 이름이 노출됩니다.</li>
+<li class="">controlled 컴포넌트로 동작합니다. <code>activeTab</code> 으로 현재 컨텍스트를 지정하고 <code>onTabChange</code> 로 선택을 처리합니다.</li>
+<li class="">콘텐츠 영역만 전환하는 <a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/horizontal-tab">HorizontalTab</a> 과 달리, 컨텍스트(scope) 자체를 바꾸며 데이터 재로드를 동반합니다.</li>
+<li class="">현재 <strong>React 전용</strong> 컴포넌트로, HTML/CDN(바닐라 JS) 버전은 제공하지 않습니다.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="버그-수정">버그 수정<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.11#%EB%B2%84%EA%B7%B8-%EC%88%98%EC%A0%95" class="hash-link" aria-label="버그 수정에 대한 직접 링크" title="버그 수정에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">ComboBox · SelectBox(HTML) 단일 선택 모드에서 드롭다운이 열린 채 <code>updateOptions()</code> 호출 시 닫히던 문제 수정
+검색·전체 조회·무한 스크롤 등 API 응답을 옵션에 반영하는 흐름에서, 옵션 갱신이
+사용자 선택으로 오인되어 "선택 후 닫기" 분기가 실행되던 것이 원인. 선택값이
+실제로 변경된 경우에만 통지하도록 수정하고, 내부 이중 갱신도 함께 제거.
+(React 구현체는 해당 없음)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선">기능 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.11#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="기능 개선에 대한 직접 링크" title="기능 개선에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">HTML ComboBox · SelectBox에 드롭다운 열림 상태를 조회하는 <code>isOpen()</code> 메서드 추가</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[v1.8.10]]></title>
             <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.10</link>
@@ -566,37 +599,6 @@ createOnChangeHandler의 복원 분기가 stale한 _previousDateBeforeInput으�
 <li class="">destructive 마크업과 관련 css 를 수정하였습니다.</li>
 </ul>
 </li>
-</ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[v1.5.3]]></title>
-            <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.3</link>
-            <guid>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.3</guid>
-            <pubDate>Tue, 24 Feb 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[ui-admin 릴리즈 노트 (v1.5.3)]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v153">ui-admin 릴리즈 노트 (v1.5.3)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.3#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v153" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.5.3)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.5.3)에 대한 직접 링크" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="신규-기능">신규 기능<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.3#%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="신규 기능에 대한 직접 링크" title="신규 기능에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">imageFileInput 컴포넌트의 스타일을 추가하였습니다.<!-- -->
-<ul>
-<li class="">오류 상태일때 보여줄 수 있는 UI 스타일을 추가하였습니다.</li>
-</ul>
-</li>
-<li class="">RangeDatePickerWithButtons 컴포넌트에 periodItems prop을 추가하였습니다.<!-- -->
-<ul>
-<li class="">이 prop을 사용하면 PERIOD_ITEM 대신 프로젝트에 맞는 커스텀 기간 항목을 정의할 수 있습니다.</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선">기능 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.3#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="기능 개선에 대한 직접 링크" title="기능 개선에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">HorizontalTab 컴포넌트의 사이즈가 변경 안되는 이슈 수정했습니다.</li>
-<li class="">PasswordInput 컴포넌트의 onChange 이벤트가 동작 안되는 이슈 수정했습니다.</li>
-<li class="">DatePicker 컴포넌트의 선택날짜가 이전, 다음달일 경우 디자인 가이드와 안맞는 색상으로 표시되는 부분 수정했습니다.</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="스타일-개선">스타일 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.3#%EC%8A%A4%ED%83%80%EC%9D%BC-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="스타일 개선에 대한 직접 링크" title="스타일 개선에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">FileInput 컴포넌트의 힌트 스타일을 기존 1.5.1 버전 이하의 스타일로 복구하였습니다.</li>
 </ul>]]></content:encoded>
         </item>
     </channel>
