@@ -4,10 +4,31 @@
         <title>NCDS Admin Blog</title>
         <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin</link>
         <description>NCDS Admin Blog</description>
-        <lastBuildDate>Wed, 17 Jun 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 23 Jun 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[v1.8.13]]></title>
+            <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.13</link>
+            <guid>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.13</guid>
+            <pubDate>Tue, 23 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[ui-admin 릴리즈 노트 (v1.8.13)]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v1813">ui-admin 릴리즈 노트 (v1.8.13)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.13#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v1813" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.8.13)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.8.13)에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="신규-기능">신규 기능<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.13#%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="신규 기능에 대한 직접 링크" title="신규 기능에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">DataGrid에 <code>showActionBar</code> prop을 추가하였습니다.<!-- -->
+<ul>
+<li class=""><code>showActionBar={false}</code> 를 전달하면 상·하단 <code>DataGrid.ActionBar</code> children과 selectable 테이블의 빈 하단 바(empty-bottom-bar)를 모두 숨깁니다.</li>
+<li class="">기본값은 <code>true</code>이며 기존 동작을 유지합니다.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="버그-수정">버그 수정<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.13#%EB%B2%84%EA%B7%B8-%EC%88%98%EC%A0%95" class="hash-link" aria-label="버그 수정에 대한 직접 링크" title="버그 수정에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">DataGrid 내부 테이블의 border-radius가 의도치 않게 노출되던 문제를 수정하였습니다.</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[v1.8.12]]></title>
             <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.12</link>
@@ -591,27 +612,6 @@ createOnChangeHandler의 복원 분기가 stale한 _previousDateBeforeInput으�
 <ul>
 <li class="">SelectBox 컴포넌트에 <code>autoWidth</code>, <code>align</code> prop을 추가하였습니다.</li>
 <li class="">SelectBox 옵션에 <code>icon</code> 필드를 추가하였습니다.</li>
-</ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[v1.5.5]]></title>
-            <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.5</link>
-            <guid>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.5</guid>
-            <pubDate>Tue, 03 Mar 2026 09:00:00 GMT</pubDate>
-            <description><![CDATA[ui-admin 릴리즈 노트 (v1.5.5)]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v155">ui-admin 릴리즈 노트 (v1.5.5)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.5#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v155" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.5.5)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.5.5)에 대한 직접 링크" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선">기능 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.5#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="기능 개선에 대한 직접 링크" title="기능 개선에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">Button 컴포넌트의 label prop 타입이 ReactNode를 지원하도록 변경되었습니다.</li>
-<li class="">Modal.Content, Modal.Actions 컴포넌트에 className prop을 추가하였습니다.</li>
-<li class="">Dropdown 아이템에 className prop을 추가하였습니다.</li>
-<li class="">DatePicker 컴포넌트에 className prop을 추가하였습니다.</li>
-<li class="">Input 컴포넌트의 leadingElement, trailingElement에 placement 옵션을 추가하였습니다.</li>
-<li class="">ButtonGroup 컴포넌트의 ButtonGroupProps, ButtonGroupItemProps 타입을 export하였습니다.</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="스타일-개선">스타일 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.5.5#%EC%8A%A4%ED%83%80%EC%9D%BC-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="스타일 개선에 대한 직접 링크" title="스타일 개선에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">Input 컴포넌트의 leading, trailing element 스타일을 개선하였습니다.</li>
 </ul>]]></content:encoded>
         </item>
     </channel>
