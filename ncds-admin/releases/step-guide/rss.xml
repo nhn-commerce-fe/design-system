@@ -4,10 +4,43 @@
         <title>NCDS Admin Blog</title>
         <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/step-guide</link>
         <description>NCDS Admin Blog</description>
-        <lastBuildDate>Thu, 09 Jul 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 14 Jul 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[v2.0.3]]></title>
+            <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/step-guide/release-note-step-guide-2.0.3</link>
+            <guid>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/step-guide/release-note-step-guide-2.0.3</guid>
+            <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[step-guide 릴리즈 노트 (v2.0.3)]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="step-guide-릴리즈-노트-v203">step-guide 릴리즈 노트 (v2.0.3)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/step-guide/release-note-step-guide-2.0.3#step-guide-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v203" class="hash-link" aria-label="step-guide 릴리즈 노트 (v2.0.3)에 대한 직접 링크" title="step-guide 릴리즈 노트 (v2.0.3)에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선">기능 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/step-guide/release-note-step-guide-2.0.3#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="기능 개선에 대한 직접 링크" title="기능 개선에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">fix(step-guide): 툴팁 제목·보조 텍스트 표시 오류 수정<!-- -->
+<ul>
+<li class="">제목: display<!-- -->:flex<!-- -->·nowrap 제거하고 word-break 적용해 긴 제목이 잘리지 않고 줄바꿈되도록 수정</li>
+<li class="">보조 텍스트: line-clamp를 padding 없는 내부 요소로 분리해 2줄 초과 시 다음 줄이 노출되던 문제 수정</li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+            <category>Step Guide</category>
+            <category>Bugfix</category>
+        </item>
+        <item>
+            <title><![CDATA[v2.0.2]]></title>
+            <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/step-guide/release-note-step-guide-2.0.2</link>
+            <guid>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/step-guide/release-note-step-guide-2.0.2</guid>
+            <pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[step-guide 릴리즈 노트 (v2.0.2)]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="step-guide-릴리즈-노트-v202">step-guide 릴리즈 노트 (v2.0.2)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/step-guide/release-note-step-guide-2.0.2#step-guide-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v202" class="hash-link" aria-label="step-guide 릴리즈 노트 (v2.0.2)에 대한 직접 링크" title="step-guide 릴리즈 노트 (v2.0.2)에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선">기능 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/step-guide/release-note-step-guide-2.0.2#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="기능 개선에 대한 직접 링크" title="기능 개선에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">🐛 fix(step-guide): 툴팁 텍스트 2줄 말줄임 처리 제거</li>
+</ul>]]></content:encoded>
+            <category>Step Guide</category>
+            <category>Bugfix</category>
+        </item>
         <item>
             <title><![CDATA[v2.0.1]]></title>
             <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/step-guide/release-note-step-guide-2.0.1</link>
@@ -42,20 +75,6 @@
             <category>Step Guide</category>
             <category>Feature</category>
             <category>Improvement</category>
-        </item>
-        <item>
-            <title><![CDATA[v2.0.2]]></title>
-            <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/step-guide/release-note-step-guide-2.0.2</link>
-            <guid>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/step-guide/release-note-step-guide-2.0.2</guid>
-            <pubDate>Thu, 09 Jul 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[step-guide 릴리즈 노트 (v2.0.2)]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="step-guide-릴리즈-노트-v202">step-guide 릴리즈 노트 (v2.0.2)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/step-guide/release-note-step-guide-2.0.2#step-guide-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v202" class="hash-link" aria-label="step-guide 릴리즈 노트 (v2.0.2)에 대한 직접 링크" title="step-guide 릴리즈 노트 (v2.0.2)에 대한 직접 링크" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선">기능 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/step-guide/release-note-step-guide-2.0.2#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="기능 개선에 대한 직접 링크" title="기능 개선에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">🐛 fix(step-guide): 툴팁 텍스트 2줄 말줄임 처리 제거</li>
-</ul>]]></content:encoded>
-            <category>Step Guide</category>
-            <category>Bugfix</category>
         </item>
         <item>
             <title><![CDATA[v2.0.0]]></title>
