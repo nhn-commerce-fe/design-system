@@ -2,11 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin</id>
     <title>NCDS Admin Blog</title>
-    <updated>2026-07-07T00:00:00.000Z</updated>
+    <updated>2026-07-22T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin"/>
     <subtitle>NCDS Admin Blog</subtitle>
     <icon>https://nhn-commerce-fe.github.io/design-system/ncds-admin/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[v1.8.16]]></title>
+        <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.16</id>
+        <link href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.16"/>
+        <updated>2026-07-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ui-admin 릴리즈 노트 (v1.8.16)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v1816">ui-admin 릴리즈 노트 (v1.8.16)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.16#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v1816" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.8.16)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.8.16)에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="버그-수정">버그 수정<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.16#%EB%B2%84%EA%B7%B8-%EC%88%98%EC%A0%95" class="hash-link" aria-label="버그 수정에 대한 직접 링크" title="버그 수정에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><code>blue-100</code> 컬러 토큰 값을 수정하였습니다. (<code>#d1e9ff</code> → <code>#e0efff</code>)<!-- -->
+<ul>
+<li class="">디자인 토큰 정의(<code>@ncds/token</code>)와 ui-admin CSS 변수(<code>--blue-100</code>)를 함께 정렬하였습니다.</li>
+</ul>
+</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[v1.8.15]]></title>
         <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.15</id>
@@ -615,19 +631,6 @@ createOnChangeHandler의 복원 분기가 stale한 _previousDateBeforeInput으�
 <li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/password-input">PasswordInput</a> 컴포넌트 문서를 신규 추가하고 사이드바에 등록하였습니다.</li>
 <li class="">컴포넌트 문서를 소스 코드와 동기화하였습니다. (badge-group, badge, button-group, button, combobox, date-picker, dot, dropdown, empty-state, file-input, horizontal-tab, input, number-input, progress-bar, range-date-picker, selectBox, spinner, switch, tag, vertical-tab)</li>
 <li class="">Modal 데모 컨트롤 및 예시 컴포넌트를 업데이트하였습니다.</li>
-</ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[v1.6.2]]></title>
-        <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.6.2</id>
-        <link href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.6.2"/>
-        <updated>2026-03-04T10:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ui-admin 릴리즈 노트 (v1.6.2)]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v162">ui-admin 릴리즈 노트 (v1.6.2)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.6.2#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v162" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.6.2)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.6.2)에 대한 직접 링크" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="버그-수정">버그 수정<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.6.2#%EB%B2%84%EA%B7%B8-%EC%88%98%EC%A0%95" class="hash-link" aria-label="버그 수정에 대한 직접 링크" title="버그 수정에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">Toggle 컴포넌트의 On + disabled 상태에서 CSS 특이도 이슈를 수정하였습니다.</li>
-<li class="">SideSlot 컴포넌트의 타입 선언 파일(.d.ts)이 빌드 시 누락되는 이슈를 수정하였습니다.</li>
 </ul>]]></content>
     </entry>
 </feed>
