@@ -2,11 +2,69 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin</id>
     <title>NCDS Admin Blog</title>
-    <updated>2026-07-22T00:00:00.000Z</updated>
+    <updated>2026-07-28T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin"/>
     <subtitle>NCDS Admin Blog</subtitle>
     <icon>https://nhn-commerce-fe.github.io/design-system/ncds-admin/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[v1.8.17]]></title>
+        <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.17</id>
+        <link href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.17"/>
+        <updated>2026-07-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ui-admin 릴리즈 노트 (v1.8.17)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v1817">ui-admin 릴리즈 노트 (v1.8.17)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.17#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v1817" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.8.17)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.8.17)에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="신규-기능">신규 기능<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.17#%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="신규 기능에 대한 직접 링크" title="신규 기능에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">ImageFileInput에 서버에 저장된 이미지의 미리보기 기능을 추가하였습니다. (#390)<!-- -->
+<ul>
+<li class=""><code>uploadedFiles</code>(<code>ImageUploadedFile[]</code> = <code>{ fileName, fileImageUrl }</code>)로 저장된 이미지를 전달하면 URL을 그대로 렌더링합니다. <code>File</code>로 변환할 필요가 없고, 외부 도메인 주소여도 <code>fetch</code>나 CORS 설정이 필요하지 않습니다.</li>
+<li class="">저장된 이미지가 새로 선택한 파일보다 앞에 표시되며, <code>maxFileCount</code>는 두 목록을 합해서 계산합니다.</li>
+<li class=""><code>value</code>/<code>onChange</code>와 동일한 controlled prop입니다. 삭제 시 남은 목록으로 <code>onUploadedFilesChange</code>가 호출되며, 이 콜백을 전달하지 않으면 삭제가 반영되지 않습니다.</li>
+<li class="">저장된 이미지와 파일명이 같은 파일을 선택하면 <code>ALREADY_UPLOADED</code>로 반려합니다. 단 <code>maxFileCount={1}</code>은 교체 용도이므로 같은 이름도 허용하며, 새 파일을 선택하면 저장된 이미지를 함께 비웁니다.</li>
+<li class=""><code>ImageFileInputErrorType</code>을 ImageFileInput에서도 재export하여, FileInput을 경유하지 않고 참조할 수 있습니다.</li>
+</ul>
+</li>
+<li class="">FileInput에 내장 파일 태그 목록의 노출을 제어하는 <code>showFileTags</code> prop을 추가하였습니다. (#384)<!-- -->
+<ul>
+<li class="">기본값은 <code>true</code>로 기존 동작을 유지합니다. <code>showFileTags={false}</code>로 끄면 파일 목록을 원하는 위치·형태로 직접 렌더링할 수 있으며, 이때도 <code>onChange</code>/<code>onFileSelect</code> 콜백과 중복·개수·용량 검증은 그대로 동작합니다.</li>
+<li class="">내장 목록을 끄면 삭제 UI도 함께 사라집니다. DES-SPEC-012는 업로드된 파일의 삭제 기능을 필수로 요구하므로 삭제 수단을 직접 제공해야 합니다.</li>
+<li class="">React 전용 prop입니다. HTML 버전은 원래부터 파일 태그를 렌더링하지 않고 <code>onChange</code>로 파일만 전달합니다.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선">기능 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.17#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="기능 개선에 대한 직접 링크" title="기능 개선에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">data-grid composition 개선 및 checkbox indeterminate CSS-native 수정 (#387)<!-- -->
+<ul>
+<li class="">renderToHtml 네이티브 HTML 태그(div/span/strong) 지원 및 sanitize allowlist 적용</li>
+<li class="">data-grid composition 평면화 — summary/action-bar 구조 정정, select-box → select 교체</li>
+<li class="">DnD with selectable: 액션바 이동 버튼·드래그셀 SVG 완성, --left modifier 등록</li>
+<li class="">checkbox indeterminate <code>:has(input:indeterminate)</code> CSS-native 지원으로 CDN 환경 미적용 수정</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="버그-수정">버그 수정<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.17#%EB%B2%84%EA%B7%B8-%EC%88%98%EC%A0%95" class="hash-link" aria-label="버그 수정에 대한 직접 링크" title="버그 수정에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">FileInput·ImageFileInput 이미지 미리보기의 object URL 누수를 수정하였습니다.<!-- -->
+<ul>
+<li class="">렌더링 중 <code>URL.createObjectURL</code>을 호출하여 리렌더링마다 blob URL이 새로 생성되고 해제되지 않던 문제입니다. <code>useObjectUrl</code> 훅으로 분리하여 파일이 바뀌거나 언마운트될 때 <code>URL.revokeObjectURL</code>로 해제합니다.</li>
+<li class="">이 훅은 패키지 루트에서 export되므로 직접 사용할 수도 있습니다.</li>
+</ul>
+</li>
+<li class="">ImageFileInput이 <code>disabled</code> 상태에서도 미리보기 삭제 버튼을 노출하여 삭제가 가능하던 문제를 수정하였습니다.<!-- -->
+<ul>
+<li class="">DES-SPEC-013 §5.3에 따라 썸네일은 그대로 유지하고 삭제 아이콘만 미노출합니다. 저장된 이미지와 새로 선택한 파일 모두에 적용됩니다.</li>
+</ul>
+</li>
+<li class="">ImageFileInput에서 선택한 파일이 전량 반려될 때 기존 선택이 사라지던 문제를 수정하였습니다.<!-- -->
+<ul>
+<li class=""><code>maxFileCount={1}</code>인 영역에서 모든 파일이 반려되면 빈 목록으로 덮어써지던 문제입니다. 통과한 파일이 없으면 기존 선택과 저장된 이미지를 그대로 유지합니다.</li>
+</ul>
+</li>
+<li class="">ImageFileInput 문서의 HTML 옵션 표에 실제로 존재하지 않는 <code>showImagePreview</code>, <code>checkboxName</code> 옵션이 기재되어 있던 문제를 수정하였습니다.</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[v1.8.16]]></title>
         <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.16</id>
@@ -608,29 +666,6 @@ createOnChangeHandler의 복원 분기가 stale한 _previousDateBeforeInput으�
 <li class="">ButtonGroup.Item에 <code>className</code> prop이 전달되지 않는 문제를 수정하였습니다.</li>
 <li class="">InputBase에 <code>className</code> prop이 최상위 요소에 전달되지 않는 문제를 수정하였습니다.</li>
 <li class="">HorizontalTab에서 마지막 탭 선택시 UI 영역이 제대로 보이지 않는 문제를 수정하였습니다.</li>
-</ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[v1.6.3]]></title>
-        <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.6.3</id>
-        <link href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.6.3"/>
-        <updated>2026-03-12T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ui-admin 릴리즈 노트 (v1.6.3)]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v163">ui-admin 릴리즈 노트 (v1.6.3)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.6.3#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v163" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.6.3)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.6.3)에 대한 직접 링크" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="버그-수정">버그 수정<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.6.3#%EB%B2%84%EA%B7%B8-%EC%88%98%EC%A0%95" class="hash-link" aria-label="버그 수정에 대한 직접 링크" title="버그 수정에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">[HTML] comboBox, selectBox, fileInput의 미사용 메서드/코드를 제거하고 내부 모듈 네이밍을 정리하였습니다. (selectBox → unifiedBox)</li>
-<li class="">React 컴포넌트의 props/JSDoc을 소스 코드와 동기화하였습니다. (Button, BadgeGroup, Checkbox, ComboBox, DatePicker, Dot, Dropdown, InputBase, NumberInput, Modal, Pagination, Radio, Select, SelectBox, Spinner, Switch, HorizontalTab, VerticalTab, Tag 등)</li>
-<li class="">input: <code>__destructive-ico</code> 클래스명 오타를 <code>__destructive-icon</code>으로 수정하였습니다.</li>
-<li class="">radio: error 상태에서 hover 시 border-color가 유지되지 않던 스타일을 수정하였습니다.</li>
-<li class="">spinner: 텍스트가 없는 경우에도 <code>margin-block-end</code>가 적용되던 문제를 수정하였습니다. (<code>:has(*)</code> 조건으로 변경)</li>
-<li class="">tag: 툴팁 위치 관련 미사용 단독 방향 클래스(<code>--top</code>, <code>--bottom</code>, <code>--left</code>, <code>--right</code>, <code>--measuring</code>)를 제거하였습니다.</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="문서">문서<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.6.3#%EB%AC%B8%EC%84%9C" class="hash-link" aria-label="문서에 대한 직접 링크" title="문서에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/password-input">PasswordInput</a> 컴포넌트 문서를 신규 추가하고 사이드바에 등록하였습니다.</li>
-<li class="">컴포넌트 문서를 소스 코드와 동기화하였습니다. (badge-group, badge, button-group, button, combobox, date-picker, dot, dropdown, empty-state, file-input, horizontal-tab, input, number-input, progress-bar, range-date-picker, selectBox, spinner, switch, tag, vertical-tab)</li>
-<li class="">Modal 데모 컨트롤 및 예시 컴포넌트를 업데이트하였습니다.</li>
 </ul>]]></content>
     </entry>
 </feed>
