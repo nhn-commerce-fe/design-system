@@ -4,10 +4,64 @@
         <title>NCDS Admin Blog</title>
         <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin</link>
         <description>NCDS Admin Blog</description>
-        <lastBuildDate>Fri, 07 Aug 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 11 Aug 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[v1.8.19]]></title>
+            <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.19</link>
+            <guid>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.19</guid>
+            <pubDate>Tue, 11 Aug 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[ui-admin 릴리즈 노트 (v1.8.19)]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v1819">ui-admin 릴리즈 노트 (v1.8.19)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.19#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v1819" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.8.19)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.8.19)에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="버그-수정">버그 수정<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.19#%EB%B2%84%EA%B7%B8-%EC%88%98%EC%A0%95" class="hash-link" aria-label="버그 수정에 대한 직접 링크" title="버그 수정에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">세로형(vertical) 테이블에서 레이블 칸을 <code>rowSpan</code>으로 병합했을 때, 레이블이 생략된 행의 값 칸이 레이블과 같은 회색 배경으로 표시되던 문제를 수정하였습니다. (#422)<!-- -->
+<ul>
+<li class="">레이블 스타일을 "그 행의 첫 번째 칸"이라는 위치 기준으로 적용하고 있어, 레이블이 병합되면 값 칸이 그 행의 첫 번째 칸이 되어 레이블 배경·고정폭·글자색을 함께 물려받던 문제입니다.</li>
+<li class="">레이블 판별 기준을 위치에서 칸의 종류(<code>&lt;th&gt;</code>)로 바꿨습니다. 값 칸은 <code>&lt;td&gt;</code>이므로 병합 여부나 위치와 무관하게 흰 배경을 유지합니다.</li>
+</ul>
+</li>
+<li class="">HTML(CDN) 버전에서 세로형 테이블의 레이블 칸이 <code>&lt;td&gt;</code>로 생성되던 문제를 수정하였습니다.<!-- -->
+<ul>
+<li class="">React 버전은 <code>Table.Cell</code>에 <code>isHeader</code>를 주면 <code>&lt;th scope="row"&gt;</code>로 렌더되지만, HTML 버전은 <code>&lt;td&gt;</code>로 만들고 있어 두 버전의 결과가 달랐습니다.</li>
+<li class="">HTML 버전도 React와 같은 구조를 만들도록 통일하였습니다. <code>Table</code> 클래스로 세로형 테이블을 생성하면 레이블 칸이 <code>&lt;th scope="row"&gt;</code>로 나옵니다.</li>
+</ul>
+</li>
+<li class="">세로형 테이블의 값 칸 안에 표를 중첩했을 때, 안쪽 표 첫 열의 글자색이 칸의 종류에 따라 달라지던 문제를 수정하였습니다.<!-- -->
+<ul>
+<li class="">안쪽 표는 바깥 세로형 레이블 스타일을 물려받지 않도록 되돌리는 규칙을 갖고 있는데, 글자색만 그 규칙에서 빠져 있어 바깥 값이 흘러들어오고 있었습니다.</li>
+<li class="">안쪽 표 첫 열은 칸의 종류와 무관하게 본문 글자색을 사용합니다.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="breaking-changes">Breaking Changes<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.19#breaking-changes" class="hash-link" aria-label="Breaking Changes에 대한 직접 링크" title="Breaking Changes에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">세로형 테이블의 레이블 칸은 <code>&lt;th&gt;</code>여야 레이블 스타일(회색 배경·고정폭·좌측 정렬)이 적용됩니다.<!-- -->
+<ul>
+<li class="">React는 <code>&lt;Table.Cell isHeader&gt;</code>, HTML은 <code>&lt;th scope="row" class="ncua-table__cell"&gt;</code>로 작성해야 합니다.</li>
+<li class="">종전에는 위치만 맞으면 <code>&lt;td&gt;</code>도 레이블처럼 보였습니다. <code>isHeader</code> 없이 레이블 칸을 작성한 화면이 있다면 회색 배경이 사라지므로 확인이 필요합니다.</li>
+<li class="">문서에 안내되어 있던 사용법이며, MCP(<code>@ncds/ui-admin-mcp</code>)의 HTML 검증도 종전부터 <code>&lt;th scope="row"&gt;</code>를 요구하고 있었습니다.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="문서">문서<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.19#%EB%AC%B8%EC%84%9C" class="hash-link" aria-label="문서에 대한 직접 링크" title="문서에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">세로형 테이블 문서에 예시 두 가지를 추가하였습니다.<!-- -->
+<ul>
+<li class="">레이블 칸 병합(<code>rowSpan</code>) — 레이블 하나가 여러 행에 걸치는 경우</li>
+<li class="">값 칸에 표 중첩 — 값 칸 안에 다른 표를 넣는 경우</li>
+<li class="">두 경우 모두 React 문서와 HTML 플레이그라운드(<code>playground/route/table.html</code>) 양쪽에서 확인할 수 있습니다. HTML 버전의 <code>Table</code> 클래스는 컬럼 배열당 한 행을 만드는 구조라 <code>rowSpan</code>과 표 중첩을 옵션으로 표현할 수 없어, 직접 작성하는 마크업 형태로 안내합니다.</li>
+</ul>
+</li>
+<li class="">시작하기 문서에 알파 버전 검증 방법 안내를 추가하였습니다. (#417)<!-- -->
+<ul>
+<li class="">알파 버전 설치(<code>@alpha</code>) → 동작 확인 → 정식 전환 3단계와, 운영 배포 전 알파 버전이 물려 있지 않은지 확인하는 검사 예시를 담았습니다.</li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[v1.8.18]]></title>
             <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.18</link>
@@ -691,29 +745,6 @@ createOnChangeHandler의 복원 분기가 stale한 _previousDateBeforeInput으�
 <li class="">활성화 시 캘린더가 body에 포탈 마운트되며, 스크롤 시 input 위치를 자동 추적합니다.</li>
 </ul>
 </li>
-</ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[v1.7.0]]></title>
-            <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.7.0</link>
-            <guid>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.7.0</guid>
-            <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[ui-admin 릴리즈 노트 (v1.7.0)]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v170">ui-admin 릴리즈 노트 (v1.7.0)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.7.0#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v170" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.7.0)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.7.0)에 대한 직접 링크" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="신규-기능">신규 기능<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.7.0#%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="신규 기능에 대한 직접 링크" title="신규 기능에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">Button에 <code>loading</code> prop을 추가하였습니다. Primary, Secondary, Secondary-gray, Destructive hierarchy에서 사용 가능하며, Leading icon 위치에 인라인 스피너를 표시하고 로딩 중 disabled 처리됩니다. (onlyIcon 모드에서는 미지원)</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선-breaking-changes">기능 개선 (Breaking Changes)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.7.0#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0-breaking-changes" class="hash-link" aria-label="기능 개선 (Breaking Changes)에 대한 직접 링크" title="기능 개선 (Breaking Changes)에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">Button 기본 사이즈를 <code>xs</code>로 변경하였습니다.</li>
-<li class="">Toggle 기본값을 <code>sm</code>으로 변경하였습니다.</li>
-<li class="">Badge 기본 사이즈를 <code>xs</code>로 변경하였습니다.</li>
-<li class="">FeaturedIcon 기본값을 <code>sm</code>으로 변경하였습니다.</li>
-<li class="">Spinner size 기본값을 <code>sm</code>으로 변경하였습니다.</li>
-<li class="">Dot size 기본값을 <code>sm</code>으로 변경하였습니다.</li>
-<li class="">CarouselArrow, CarouselNumberGroup의 size props를 제거하였습니다.</li>
-<li class="">SwitchSize 타입을 제거하였습니다.</li>
 </ul>]]></content:encoded>
         </item>
     </channel>
