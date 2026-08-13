@@ -4,10 +4,36 @@
         <title>NCDS Admin Blog</title>
         <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin</link>
         <description>NCDS Admin Blog</description>
-        <lastBuildDate>Tue, 11 Aug 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 13 Aug 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[v1.8.20]]></title>
+            <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.20</link>
+            <guid>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.20</guid>
+            <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[ui-admin 릴리즈 노트 (v1.8.20)]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v1820">ui-admin 릴리즈 노트 (v1.8.20)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.20#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v1820" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.8.20)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.8.20)에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="버그-수정">버그 수정<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.20#%EB%B2%84%EA%B7%B8-%EC%88%98%EC%A0%95" class="hash-link" aria-label="버그 수정에 대한 직접 링크" title="버그 수정에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><code>Input</code> 계열 컴포넌트에서 <code>clearText</code>·<code>onClearText</code>를 사용하면 콘솔에 React의 알 수 없는 속성 경고가 출력되던 문제를 수정하였습니다. (#407)<!-- -->
+<ul>
+<li class="">두 prop을 내부에서 꺼내 쓰지 않고 나머지 속성과 함께 DOM <code>&lt;input&gt;</code>으로 그대로 넘기고 있어, 브라우저가 모르는 속성으로 전달되던 문제입니다.</li>
+<li class="">두 prop을 내부에서만 사용하도록 분리하여 DOM으로 전달되지 않습니다. 화면 동작과 사용법은 종전과 같습니다.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="문서">문서<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.20#%EB%AC%B8%EC%84%9C" class="hash-link" aria-label="문서에 대한 직접 링크" title="문서에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">ButtonGroup 인터랙티브 예제에서 실제로 존재하지 않는 <code>label</code> 컨트롤을 제거하였습니다.<!-- -->
+<ul>
+<li class=""><code>ButtonGroupProps</code>에 없는 값이라 컨트롤을 바꿔도 화면에 반영되지 않아, 사용할 수 있는 prop으로 오인할 수 있었습니다.</li>
+<li class="">컨트롤 순서도 단일 값(<code>size</code>·<code>disabled</code>·<code>className</code>·<code>hasBorder</code>) 다음에 배열(<code>items</code>)이 오도록 정리하였습니다.</li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[v1.8.19]]></title>
             <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.19</link>
@@ -688,61 +714,6 @@ createOnChangeHandler의 복원 분기가 stale한 _previousDateBeforeInput으�
 <li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/combobox">ComboBox</a> 컴포넌트<!-- -->
 <ul>
 <li class="">트레일링 '전체' 버튼이 렌더되지 않던 문제를 수정하였습니다.</li>
-</ul>
-</li>
-</ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[v1.8.0]]></title>
-            <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.0</link>
-            <guid>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.0</guid>
-            <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[ui-admin 릴리즈 노트 (v1.8.0)]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v180">ui-admin 릴리즈 노트 (v1.8.0)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.0#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v180" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.8.0)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.8.0)에 대한 직접 링크" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="신규-기능">신규 기능<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.0#%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="신규 기능에 대한 직접 링크" title="신규 기능에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/table">Table 컴포넌트</a>를 추가하였습니다.<!-- -->
-<ul>
-<li class="">Compound component 구조로 <code>Table.Header</code>, <code>Body</code>, <code>Row</code>, <code>Cell</code> 등 하위 컴포넌트를 제공합니다.</li>
-<li class="">체크박스 선택, Footer 영역을 지원합니다.</li>
-</ul>
-</li>
-<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/data-grid">DataGrid 컴포넌트</a>를 추가하였습니다.<!-- -->
-<ul>
-<li class="">Table 등 원자 컴포넌트를 레이아웃 규칙에 맞게 조합하는 컨테이너 컴포넌트입니다.</li>
-<li class=""><code>variant</code>로 <code>search-result</code>, <code>horizontal</code> 두 가지 레이아웃을 지원합니다.</li>
-<li class="">하위 컴포넌트: <code>DataGrid.SearchFilter</code>, <code>Summary</code>, <code>FilterBar</code>, <code>ActionBar</code>(top/bottom), <code>Table</code>, <code>Pagination</code></li>
-<li class="">Child 자동 정렬로 렌더링 순서가 보장되며, <code>selectable</code> 사용 시 하단 ActionBar가 자동 렌더링됩니다.</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선">기능 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.0#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="기능 개선에 대한 직접 링크" title="기능 개선에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">
-<p>ButtonGroup, InputBase 컴포넌트에 <code>fullWidth</code> prop을 추가하였습니다.</p>
-</li>
-<li class="">
-<p>Tooltip 컴포넌트의 <code>tooltipType</code> 기본값을 <code>black</code>에서 <code>white</code>로 변경하였습니다.</p>
-</li>
-<li class="">
-<p>NumberInput 스타일을 개선하였습니다.</p>
-</li>
-<li class="">
-<p>디자인 토큰을 수정하였습니다.</p>
-<ul>
-<li class="">color: <code>blue-100</code>, <code>orange-500</code> hex 값을 수정하였습니다.</li>
-<li class="">shadow: <code>primary-color-100</code> → <code>primary-100</code>으로 네이밍을 수정하였습니다.</li>
-<li class="">shadow: 누락되었던 <code>--shadow-xs-focused-3px-primary-100</code> 토큰을 추가하였습니다.</li>
-<li class="">spacing: 스케일(XS/S/M/L/XL/XXL)을 재정립하였습니다.</li>
-<li class="">font-family: fallback 스택을 추가하였습니다.</li>
-<li class="">비표준 변수(<code>shadow-tooltip</code>, <code>border-radius</code> 등)는 <code>_non-standard-variable.scss</code>로 분리하였습니다.</li>
-</ul>
-</li>
-<li class="">
-<p>DatePicker 컴포넌트에 <code>portal</code> prop을 추가하였습니다.</p>
-<ul>
-<li class=""><code>overflow: auto/scroll/hidden</code>이 적용된 스크롤 컨테이너 안에서 캘린더가 잘리는 문제를 해결합니다.</li>
-<li class="">활성화 시 캘린더가 body에 포탈 마운트되며, 스크롤 시 input 위치를 자동 추적합니다.</li>
 </ul>
 </li>
 </ul>]]></content:encoded>
