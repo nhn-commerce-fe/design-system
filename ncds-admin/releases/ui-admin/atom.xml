@@ -2,11 +2,141 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin</id>
     <title>NCDS Admin Blog</title>
-    <updated>2026-08-13T00:00:00.000Z</updated>
+    <updated>2026-09-10T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin"/>
     <subtitle>NCDS Admin Blog</subtitle>
     <icon>https://nhn-commerce-fe.github.io/design-system/ncds-admin/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[v1.8.21]]></title>
+        <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.21</id>
+        <link href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.21"/>
+        <updated>2026-09-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ui-admin 릴리즈 노트 (v1.8.21)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v1821">ui-admin 릴리즈 노트 (v1.8.21)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.21#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v1821" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.8.21)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.8.21)에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="신규-기능">신규 기능<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.21#%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="신규 기능에 대한 직접 링크" title="신규 기능에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">주소 찾기(우편번호 검색) 모달 <code>PostcodeSearchModal</code>을 추가하였습니다. (#464)<!-- -->
+<ul>
+<li class="">검색어를 입력해 도로명·지번 주소를 찾고 하나를 선택하는 모달입니다. 검색 도움말은 <code>PostcodeSearchModal.Tip</code>으로 함께 제공합니다.</li>
+<li class=""><strong>주소 검색 API는 내장되어 있지 않습니다.</strong> 검색어·결과·총 건수·현재 페이지·로딩·오류 코드는 모두 사용처가 소유하는 controlled prop이며, 컴포넌트는 <code>onSearch</code>·<code>onPageChange</code>·<code>onSelect</code>·<code>onSearchQueryChange</code>로 시점만 알려줍니다.</li>
+<li class="">결과 선택 상태는 컴포넌트가 내부에서 관리하므로 선택값을 되돌려줄 필요가 없습니다. 모달을 다시 열면 초기화됩니다.</li>
+<li class="">오류 안내는 <code>errorCode</code>(<code>E0006</code>·<code>E0008</code>·<code>E0009</code>~<code>E0013</code>)로 지정합니다. 문구 자체를 넘기는 방식은 지원하지 않으며, 코드에 따른 문구와 인풋의 오류 표시는 컴포넌트가 처리합니다.</li>
+<li class="">한 페이지는 기본 15건(<code>pageSize</code>)이며, 검색 결과가 30건을 넘으면 검색 조합 안내가 검색 영역에 함께 노출됩니다.</li>
+<li class="">React 전용입니다. HTML(CDN) 버전은 제공하지 않습니다. MCP(<code>@ncds/ui-admin-mcp</code>)에서는 조회할 수 있습니다.</li>
+</ul>
+</li>
+<li class="">Input의 <code>trailingElement</code>에 텍스트 슬롯을 추가하였습니다.<!-- -->
+<ul>
+<li class=""><code>trailingElement={{ type: 'text', text: 'px' }}</code> 형태로 단위 표시를 붙일 수 있습니다. <code>leadingElement</code>의 텍스트 슬롯과 좌우가 대칭입니다.</li>
+<li class="">종전에도 값을 넘기면 화면에 나오기는 했으나 타입 오류였고, leading 쪽 클래스가 붙어 테두리 없는 텍스트가 입력 영역에 겹쳐 보였습니다.</li>
+</ul>
+</li>
+<li class="">Callout Notification에 <code>width</code> prop을 추가하였습니다. (#466)<!-- -->
+<ul>
+<li class=""><code>'full'</code>은 100%, <code>'fit'</code>은 내용 폭(최대 100%)입니다. 지정하지 않으면 종전과 같이 100%입니다.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선">기능 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.21#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="기능 개선에 대한 직접 링크" title="기능 개선에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">Notification <code>message</code> 타입의 크기와 스타일을 축소하였습니다. (DES-SPEC-027, #457)<!-- -->
+<ul>
+<li class="">여백·모서리·그림자·글자 크기가 전반적으로 작아지고, 아이콘과 버튼 배치가 조정되었습니다. <strong><code>type="message"</code>를 사용하는 화면은 별도 조치 없이 모습이 바뀝니다.</strong> 구체적인 변경 내용은 아래 Breaking Changes를 확인해 주세요.</li>
+</ul>
+</li>
+<li class="">Notification에 <code>hidePermanentlyLabel</code> prop을 추가하였습니다.<!-- -->
+<ul>
+<li class=""><code>onHidePermanently</code>를 지정했을 때 노출되는 "다시 보지 않기" 문구를 바꿀 수 있습니다. 종전처럼 DOM을 직접 찾아 문구를 덮어쓰던 방식도 계속 동작합니다.</li>
+</ul>
+</li>
+<li class="">Notification 액션 버튼의 <code>hierarchy</code> 어휘를 <code>secondary</code>·<code>secondary-gray</code>·<code>text</code>·<code>text-gray</code> 네 가지로 통일하였습니다.<!-- -->
+<ul>
+<li class="">HTML(CDN) 버전에서 쓰던 <code>link</code>·<code>link-gray</code>는 deprecated로 남겨 두었고, 내부에서 <code>text</code>·<code>text-gray</code>로 자동 변환되므로 기존 코드는 그대로 동작합니다.</li>
+</ul>
+</li>
+<li class="">MCP에서 Callout Notification을 정적 마크업으로 렌더하도록 하였습니다. (#472)<!-- -->
+<ul>
+<li class=""><code>render_to_html('notification', { type: 'callout' })</code>이 CDN 초기화 스크립트 대신 정적 HTML을 반환합니다. Callout은 원래 JS API로 생성할 수 없는 타입이라, 종전에는 "JS가 필요하다"는 응답과 실제 마크업이 어긋나 AI 에이전트에게 잘못된 신호를 주고 있었습니다.</li>
+<li class="">Callout을 언제 쓰는지, <code>message</code> 타입과 어떻게 구분하는지, 동적 문구를 넣을 때 주의할 점을 MCP 지침에 추가하였습니다.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="버그-수정">버그 수정<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.21#%EB%B2%84%EA%B7%B8-%EC%88%98%EC%A0%95" class="hash-link" aria-label="버그 수정에 대한 직접 링크" title="버그 수정에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">controlled Input(값을 <code>value</code> prop으로 내려주는 경우)에서 한글 조합이 중간에 끊기던 문제를 수정하였습니다.<!-- -->
+<ul>
+<li class="">입력할 때마다 내부 상태를 갱신하고 있어, 그 리렌더가 한글 조합 도중에 끼어들어 조합이 깨지던 문제입니다.</li>
+<li class="">controlled일 때는 <code>value</code>의 길이로 바로 계산하도록 바꿔 리렌더가 발생하지 않습니다. 글자 수 표시(<code>showTextCount</code>)는 종전과 같이 동작합니다.</li>
+</ul>
+</li>
+<li class="">PasswordInput의 자물쇠 아이콘이 값을 입력해도 연한 회색에 머물던 문제를 수정하였습니다. (#440)<!-- -->
+<ul>
+<li class="">값의 유무를 <code>value</code> prop으로 판단하고 있어, <code>value</code>를 내려주지 않는 uncontrolled Input에서는 항상 "값 없음"으로 처리되던 문제입니다.</li>
+<li class="">값 유무를 실제 입력 요소에서 판단하도록 바꿔, 입력했거나 포커스된 상태에서 아이콘이 진해집니다.</li>
+</ul>
+</li>
+<li class="">PasswordInput이 비활성 상태일 때 비밀번호 표시 토글 버튼이 그대로 보이던 문제를 수정하였습니다.</li>
+<li class="">좁은 컨테이너에서 Notification <code>message</code>의 텍스트가 한 글자씩 세로로 쪼개지던 문제를 수정하였습니다. (#450)<!-- -->
+<ul>
+<li class="">반응형 처리가 뷰포트 폭 기준이라, 화면은 넓고 컨테이너만 좁은 어드민 레이아웃에서는 발동하지 않던 문제입니다. 폭 290px 기준으로 높이가 1018px까지 늘어났습니다.</li>
+<li class="">텍스트 영역에 최소 폭과 줄바꿈을 주어 같은 조건에서 162px로 정상 표시됩니다. 600px 이상에서는 종전과 같은 한 줄 배치입니다.</li>
+</ul>
+</li>
+<li class="">모바일 Pagination에서 이전·다음 버튼이 나오지 않던 문제를 수정하였습니다.<!-- -->
+<ul>
+<li class=""><code>breakPoint="mo"</code>는 페이지 번호 목록과 처음·마지막 버튼을 숨기므로 이전·다음이 유일한 이동 수단인데, 버튼 노출 조건이 PC 기준이라 페이지 수가 적으면 <strong>이동 수단이 하나도 없는</strong> 상태가 되었습니다.</li>
+<li class="">모바일에서는 페이지가 2개 이상이면 이전·다음이 노출됩니다. PC 동작은 종전과 같습니다.</li>
+</ul>
+</li>
+<li class="">HTML(CDN) 버전 Notification에서 액션 버튼에 <code>hierarchy</code>를 지정하지 않으면 <code>onClick</code>이 호출되지 않던 문제를 수정하였습니다.<!-- -->
+<ul>
+<li class="">버튼을 그릴 때와 이벤트를 연결할 때 서로 다른 규칙으로 키를 만들고 있어 연결이 어긋나던 문제입니다.</li>
+</ul>
+</li>
+<li class="">MCP를 통해 HTML을 작성할 때 Input 단위 텍스트의 테두리와 모서리가 사라지던 문제를 수정하였습니다.<!-- -->
+<ul>
+<li class="">클래스명을 문자열 조합으로 만들면서 MCP가 완성된 클래스명을 수집하지 못해, 검증 단계에서 해당 요소가 제거되던 문제입니다. React 컴포넌트를 직접 쓰는 경우에는 영향이 없었습니다.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="breaking-changes">Breaking Changes<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.21#breaking-changes" class="hash-link" aria-label="Breaking Changes에 대한 직접 링크" title="Breaking Changes에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">Notification <code>message</code> 타입의 크기·스타일·DOM 구조가 바뀌었습니다. (DES-SPEC-027, #457)<!-- -->
+<ul>
+<li class="">props는 그대로이지만 <strong>화면이 달라집니다.</strong> 여백 <code>16px 24px</code> → <code>12px 16px 12px 24px</code>(모바일 <code>16px</code> → <code>12px 8px 12px 16px</code>), 모서리 <code>8px</code> → <code>12px</code>, 그림자 <code>lg</code> → <code>md</code>, 제목 글자 <code>md</code> → <code>sm</code>, 보조 텍스트 <code>sm</code> → <code>xs</code>, 좌측 아이콘 <code>lg</code> → <code>md</code>로 조정되었습니다.</li>
+<li class="">"다시 보지 않기"와 닫기 버튼을 감싸는 영역이 액션 버튼 영역 안쪽으로 이동하였고, 표시할 내용이 없으면 해당 영역을 아예 그리지 않습니다. 또한 "다시 보지 않기"에 붙던 <code>ncua-notification__action-button--link</code> 수식자가 제거되었습니다.</li>
+<li class=""><strong>Notification의 DOM 구조나 클래스명을 선택자로 잡아 스타일을 덮어썼거나 E2E 테스트를 작성한 화면은 확인이 필요합니다.</strong></li>
+<li class="">HTML(CDN) 버전의 <code>message</code> 액션 버튼 크기가 <code>sm</code>(36px)에서 <code>xs</code>(28px)로 바뀌어 React와 같아집니다. floating·full-width 타입은 종전과 같습니다.</li>
+</ul>
+</li>
+<li class="">Input의 슬롯 아이콘(<code>leadingElement</code>·<code>trailingElement</code>) 색상이 입력 상태를 따라갑니다.<!-- -->
+<ul>
+<li class="">기본은 <code>--gray-300</code>, 값이 있거나 포커스된 상태에서는 <code>--gray-600</code>, 비활성 상태에서는 다시 <code>--gray-300</code>입니다.</li>
+<li class=""><code>color</code>를 지정하지 않은 슬롯 아이콘에만 적용됩니다. <strong>색을 고정하고 싶다면 <code>color</code>를 명시해 주세요.</strong></li>
+</ul>
+</li>
+<li class="">Input의 루트 요소에 값이 있을 때 <code>has-value</code> 클래스가 붙습니다.<!-- -->
+<ul>
+<li class="">아이콘 색상을 CSS로 판단하기 위해 추가된 클래스입니다. Input의 클래스 목록을 검사하는 테스트가 있다면 확인이 필요합니다.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="문서">문서<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.21#%EB%AC%B8%EC%84%9C" class="hash-link" aria-label="문서에 대한 직접 링크" title="문서에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">SelectBox 문서에 옵션 아이콘 사용법을 추가하였습니다.<!-- -->
+<ul>
+<li class=""><code>OptionType.icon</code>은 드롭다운 목록과 선택 후 트리거 양쪽에 표시되며, SelectBox의 <code>size</code>와 무관하게 16px로 고정됩니다. <code>multiple</code> 모드에서는 트리거에 표시되지 않습니다.</li>
+<li class="">타입 표기도 실제 정의(<code>SlotIconComponent</code>)에 맞게 정정하였습니다.</li>
+</ul>
+</li>
+<li class="">Input 문서 예제에서 아이콘 크기와 색상을 하드코딩하던 부분을 제거하였습니다.<!-- -->
+<ul>
+<li class="">컴포넌트 기본값과 다른 값이 예제에 박혀 있어, 문서를 보고 작성하면 실제와 다르게 보이던 문제입니다. 슬롯 아이콘의 상태별 색상 변화도 문서에서 확인할 수 있습니다.</li>
+</ul>
+</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[v1.8.20]]></title>
         <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.20</id>
@@ -681,38 +811,6 @@ createOnChangeHandler의 복원 분기가 stale한 _previousDateBeforeInput으�
 <li class="">포털 분리로 끊겼던 폰트 크기 상속을 <code>__bg</code>에 직접 지정하여 보완하였습니다.</li>
 <li class="">hover 시점에 좌표를 동기로 확정하고 다음 프레임에 재보정하여, 웹폰트 로드·레이아웃 안정화로 인한 위치 밀림을 줄였습니다. <code>requestAnimationFrame</code>은 unmount 시 정리하여 누수를 방지합니다.</li>
 <li class=""><code>resize</code>/<code>scroll</code> 이벤트에 <code>capture</code> 옵션을 맞춰 내부 스크롤 컨테이너에서도 안정적으로 좌표가 갱신됩니다.</li>
-</ul>
-</li>
-</ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[v1.8.1]]></title>
-        <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.1</id>
-        <link href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.1"/>
-        <updated>2026-04-21T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ui-admin 릴리즈 노트 (v1.8.1)]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v181">ui-admin 릴리즈 노트 (v1.8.1)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.1#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v181" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.8.1)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.8.1)에 대한 직접 링크" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="신규-기능">신규 기능<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.1#%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="신규 기능에 대한 직접 링크" title="신규 기능에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/table">Table</a> / <a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/data-grid">DataGrid</a>에 Radio 선택 모드를 추가하였습니다.<!-- -->
-<ul>
-<li class=""><code>selectionType</code> 옵션으로 <code>'none' | 'checkbox' | 'radio'</code>를 선택할 수 있습니다.</li>
-<li class="">Radio 선택 시 헤더는 비활성 상태로 표시되며, 바디에서는 단일 행만 선택됩니다.</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선">기능 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.1#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="기능 개선에 대한 직접 링크" title="기능 개선에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/table">Table</a> / <a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/data-grid">DataGrid</a> 컴포넌트<!-- -->
-<ul>
-<li class="">체크박스·라디오 셀의 수직 정렬 이슈를 수정하였습니다.</li>
-<li class="">fixed-header 모드에서 스크롤바 트랙 오프셋을 조정하였습니다.</li>
-<li class="">선택 셀 로직을 정리하여 중복 렌더링을 제거하였습니다.</li>
-</ul>
-</li>
-<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/combobox">ComboBox</a> 컴포넌트<!-- -->
-<ul>
-<li class="">트레일링 '전체' 버튼이 렌더되지 않던 문제를 수정하였습니다.</li>
 </ul>
 </li>
 </ul>]]></content>
