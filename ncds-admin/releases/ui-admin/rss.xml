@@ -4,10 +4,32 @@
         <title>NCDS Admin Blog</title>
         <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin</link>
         <description>NCDS Admin Blog</description>
-        <lastBuildDate>Thu, 10 Sep 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 22 Sep 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[v1.8.22]]></title>
+            <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.22</link>
+            <guid>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.22</guid>
+            <pubDate>Tue, 22 Sep 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[ui-admin 릴리즈 노트 (v1.8.22)]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v1822">ui-admin 릴리즈 노트 (v1.8.22)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.22#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v1822" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.8.22)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.8.22)에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="-신규-기능">✨ 신규 기능<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.22#-%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="✨ 신규 기능에 대한 직접 링크" title="✨ 신규 기능에 대한 직접 링크" translate="no">​</a></h3>
+<p><strong>Table 커스텀 스크롤바 CDN 바인딩</strong> (<a href="https://github.nhnent.com/commerce/ncds/pull/507" target="_blank" rel="noopener noreferrer" class="">#507</a>)</p>
+<p>CDN(HTML) 환경에서 커스텀 스크롤바가 동작하지 않던 문제를 해소합니다.</p>
+<ul>
+<li class=""><code>window.ncua.TableScrollbar</code> 생성자 제공 — 문서 로드 시 자동 초기화, 수동 제어 경로도 지원</li>
+<li class="">미초기화 시 네이티브 스크롤바로 폴백</li>
+<li class="">React 훅과 CDN 바인딩 간 드래그 로직 이중화 해소</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="-버그-수정">🐛 버그 수정<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.22#-%EB%B2%84%EA%B7%B8-%EC%88%98%EC%A0%95" class="hash-link" aria-label="🐛 버그 수정에 대한 직접 링크" title="🐛 버그 수정에 대한 직접 링크" translate="no">​</a></h3>
+<p><strong>DataGrid 내부 z-index 중첩 오류</strong> (<a href="https://github.nhnent.com/commerce/ncds/pull/493" target="_blank" rel="noopener noreferrer" class="">#493</a>)</p>
+<p>ActionBar의 z-index 선언이 stacking context를 만들어 내부 드롭다운 패널이 외부로 나오지 못하던 문제를 수정합니다. ActionBar 범위 한정으로 영향 범위를 최소화했습니다.</p>
+<p><strong>SelectBox 선택 문구 말줄임</strong> (<a href="https://github.nhnent.com/commerce/ncds/pull/498" target="_blank" rel="noopener noreferrer" class="">#498</a>)</p>
+<p>긴 선택 문구가 박스를 넘칠 때 말줄임(<code>…</code>)이 적용되지 않던 SCSS 누락 문제를 수정합니다.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[v1.8.21]]></title>
             <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.21</link>
@@ -782,36 +804,6 @@ createOnChangeHandler의 복원 분기가 stale한 _previousDateBeforeInput으�
 <ul>
 <li class="">종전 <code>'md'</code> / <code>'lg'</code> 는 입력되어도 React 구현이 의미 있게 처리하지 않아 사실상 noise 였습니다. 디자인 SSoT(DES-SPEC-012 FileInput / DES-SPEC-013 ImageFileInput §5.1·§7.1) 도 두 종류만 정의합니다.</li>
 <li class="">사용자 코드에 <code>'md'</code> 또는 <code>'lg'</code> 를 명시적으로 지정한 경우 타입 에러가 발생하므로 <code>'xs'</code> 또는 <code>'sm'</code> 으로 변경이 필요합니다.</li>
-</ul>
-</li>
-</ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[v1.8.2]]></title>
-            <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.2</link>
-            <guid>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.2</guid>
-            <pubDate>Wed, 22 Apr 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[ui-admin 릴리즈 노트 (v1.8.2)]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v182">ui-admin 릴리즈 노트 (v1.8.2)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.2#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v182" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.8.2)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.8.2)에 대한 직접 링크" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="신규-기능">신규 기능<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.2#%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="신규 기능에 대한 직접 링크" title="신규 기능에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/tooltip">Tooltip</a>에 <code>zIndex</code> prop을 추가하였습니다.<!-- -->
-<ul>
-<li class="">기본값 <code>2000</code>이며, 모달 등 더 높은 stacking context 위에 띄워야 할 때 값을 지정해 오버라이드할 수 있습니다.</li>
-<li class=""><code>--z-index-tooltip</code> 토큰으로 SCSS/CSS 변수화하여 한 곳에서 관리합니다.</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="기능-개선">기능 개선<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.2#%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="기능 개선에 대한 직접 링크" title="기능 개선에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/tooltip">Tooltip</a> 컴포넌트<!-- -->
-<ul>
-<li class="">패널을 React Portal로 <code>&lt;body&gt;</code> 하위에 렌더링하도록 전환하여, 부모의 <code>overflow: hidden</code> 및 stacking context 제약에서 자유롭게 동작하도록 개선하였습니다.</li>
-<li class="">패널 최대 너비를 320px(content는 296px)로 제한하고 어절 단위 줄바꿈을 적용하여, 긴 텍스트가 자연스럽게 표시됩니다.</li>
-<li class="">활성(visible) 상태에서만 패널이 마우스 이벤트를 받도록 <code>pointer-events</code>를 분리하여, 숨겨진 패널이 앵커의 hover 이벤트를 가로채던 문제를 해결하였습니다.</li>
-<li class="">포털 분리로 끊겼던 폰트 크기 상속을 <code>__bg</code>에 직접 지정하여 보완하였습니다.</li>
-<li class="">hover 시점에 좌표를 동기로 확정하고 다음 프레임에 재보정하여, 웹폰트 로드·레이아웃 안정화로 인한 위치 밀림을 줄였습니다. <code>requestAnimationFrame</code>은 unmount 시 정리하여 누수를 방지합니다.</li>
-<li class=""><code>resize</code>/<code>scroll</code> 이벤트에 <code>capture</code> 옵션을 맞춰 내부 스크롤 컨테이너에서도 안정적으로 좌표가 갱신됩니다.</li>
 </ul>
 </li>
 </ul>]]></content:encoded>
