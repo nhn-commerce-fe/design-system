@@ -4,10 +4,31 @@
         <title>NCDS Admin Blog</title>
         <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin</link>
         <description>NCDS Admin Blog</description>
-        <lastBuildDate>Tue, 22 Sep 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 23 Sep 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[v1.8.23]]></title>
+            <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.23</link>
+            <guid>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.23</guid>
+            <pubDate>Wed, 23 Sep 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[ui-admin 릴리즈 노트 (v1.8.23)]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v1823">ui-admin 릴리즈 노트 (v1.8.23)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.23#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v1823" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.8.23)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.8.23)에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="버그-수정">버그 수정<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.23#%EB%B2%84%EA%B7%B8-%EC%88%98%EC%A0%95" class="hash-link" aria-label="버그 수정에 대한 직접 링크" title="버그 수정에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">Modal의 구분선을 표시할 때 본문 스크롤 영역이 줄어들던 문제를 수정하였습니다. (DES-SPEC-026, #514)<!-- -->
+<ul>
+<li class=""><code>Modal.Header</code>·<code>Modal.Actions</code>의 <code>showDivider</code>를 켜면 구분선이 가진 여백(각 16px)이 본문 스크롤 영역 밖에 고정 여백으로 남아, 스크롤할 수 있는 높이가 그만큼 줄어들던 문제입니다. 구분선을 위아래 모두 켜면 32px이 줄어듭니다.</li>
+<li class="">구분선의 여백을 없애고 같은 크기의 여백을 본문(<code>ncua-modal__content</code>) 안쪽으로 옮겼습니다. 여백이 본문과 함께 스크롤되며, 구분선 자체는 종전처럼 본문 밖에 고정됩니다. 겉보기 여백과 구분선 위치는 달라지지 않습니다.</li>
+<li class=""><strong>prop·마크업·클래스는 종전과 같습니다.</strong> <code>showDivider</code> 사용법과 <code>ncua-modal__header-divider</code>·<code>ncua-modal__actions-divider</code> 클래스가 모두 유지되므로 사용처에서 조치할 것이 없습니다.</li>
+<li class="">본문을 <code>form</code> 등으로 감싸 구분선과 본문이 형제 관계가 아닌 경우에도 여백이 적용됩니다.</li>
+<li class="">본문 여백을 자체 CSS로 덮어쓰고 있는 화면은 이번 규칙이 우선하므로 값을 다시 지정해야 할 수 있습니다.</li>
+<li class="">주소 찾기 모달(<code>PostcodeSearchModal</code>)은 검색 영역이 본문 최상단에 붙어야 하므로 위쪽 여백을 적용하지 않습니다.</li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[v1.8.22]]></title>
             <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.22</link>
@@ -29,27 +50,6 @@
 <p>ActionBar의 z-index 선언이 stacking context를 만들어 내부 드롭다운 패널이 외부로 나오지 못하던 문제를 수정합니다. ActionBar 범위 한정으로 영향 범위를 최소화했습니다.</p>
 <p><strong>SelectBox 선택 문구 말줄임</strong> (<a href="https://github.nhnent.com/commerce/ncds/pull/498" target="_blank" rel="noopener noreferrer" class="">#498</a>)</p>
 <p>긴 선택 문구가 박스를 넘칠 때 말줄임(<code>…</code>)이 적용되지 않던 SCSS 누락 문제를 수정합니다.</p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[v1.8.23]]></title>
-            <link>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.23</link>
-            <guid>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.23</guid>
-            <pubDate>Tue, 22 Sep 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[ui-admin 릴리즈 노트 (v1.8.23)]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v1823">ui-admin 릴리즈 노트 (v1.8.23)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.23#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v1823" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.8.23)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.8.23)에 대한 직접 링크" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="버그-수정">버그 수정<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.23#%EB%B2%84%EA%B7%B8-%EC%88%98%EC%A0%95" class="hash-link" aria-label="버그 수정에 대한 직접 링크" title="버그 수정에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">Modal의 구분선을 표시할 때 본문 스크롤 영역이 줄어들던 문제를 수정하였습니다. (DES-SPEC-026, #514)<!-- -->
-<ul>
-<li class=""><code>Modal.Header</code>·<code>Modal.Actions</code>의 <code>showDivider</code>를 켜면 구분선이 가진 여백(각 16px)이 본문 스크롤 영역 밖에 고정 여백으로 남아, 스크롤할 수 있는 높이가 그만큼 줄어들던 문제입니다. 구분선을 위아래 모두 켜면 32px이 줄어듭니다.</li>
-<li class="">구분선의 여백을 없애고 같은 크기의 여백을 본문(<code>ncua-modal__content</code>) 안쪽으로 옮겼습니다. 여백이 본문과 함께 스크롤되며, 구분선 자체는 종전처럼 본문 밖에 고정됩니다. 겉보기 여백과 구분선 위치는 달라지지 않습니다.</li>
-<li class=""><strong>prop·마크업·클래스는 종전과 같습니다.</strong> <code>showDivider</code> 사용법과 <code>ncua-modal__header-divider</code>·<code>ncua-modal__actions-divider</code> 클래스가 모두 유지되므로 사용처에서 조치할 것이 없습니다.</li>
-<li class="">본문을 <code>form</code> 등으로 감싸 구분선과 본문이 형제 관계가 아닌 경우에도 여백이 적용됩니다.</li>
-<li class="">본문 여백을 자체 CSS로 덮어쓰고 있는 화면은 이번 규칙이 우선하므로 값을 다시 지정해야 할 수 있습니다.</li>
-<li class="">주소 찾기 모달(<code>PostcodeSearchModal</code>)은 검색 영역이 본문 최상단에 붙어야 하므로 위쪽 여백을 적용하지 않습니다.</li>
-</ul>
-</li>
-</ul>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[v1.8.21]]></title>
