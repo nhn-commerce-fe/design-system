@@ -2,11 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin</id>
     <title>NCDS Admin Blog</title>
-    <updated>2026-10-13T00:00:00.000Z</updated>
+    <updated>2026-10-28T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin"/>
     <subtitle>NCDS Admin Blog</subtitle>
     <icon>https://nhn-commerce-fe.github.io/design-system/ncds-admin/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[v1.8.27]]></title>
+        <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.27</id>
+        <link href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.27"/>
+        <updated>2026-10-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ui-admin 릴리즈 노트 (v1.8.27)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v1827">ui-admin 릴리즈 노트 (v1.8.27)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.27#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v1827" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.8.27)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.8.27)에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="신규-기능">신규 기능<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.27#%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="신규 기능에 대한 직접 링크" title="신규 기능에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">HTML(CDN) 버전에 <code>ncua.PostcodeSearchModal</code>(주소 찾기 모달)을 추가하였습니다. (#599)<!-- -->
+<ul>
+<li class="">React 없이 CDN(<code>main.min.js</code>)의 <code>window.ncua.*</code>만 쓰는 화면에서도 주소 찾기 모달을 사용할 수 있습니다. 화면 구성과 동작은 React 버전과 같습니다.</li>
+<li class="">컴포넌트는 주소 검색 API를 직접 호출하지 않습니다. <code>onSearch</code>·<code>onPageChange</code>에서 사용처 서버에 요청하고, 받은 응답을 <code>setResults()</code>로 넣어 주세요.</li>
+<li class=""><code>totalCount</code>·<code>currentPage</code>에 문자열 숫자(예: <code>'15'</code>)를 넣어도 숫자로 처리합니다.</li>
+<li class="">모달을 다시 열면 이전 검색 결과가 초기화됩니다.</li>
+<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/postcode-search-modal">PostcodeSearchModal 문서</a>에 「HTML 버전」 사용법을 추가하였습니다.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="버그-수정">버그 수정<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.27#%EB%B2%84%EA%B7%B8-%EC%88%98%EC%A0%95" class="hash-link" aria-label="버그 수정에 대한 직접 링크" title="버그 수정에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class="">Pagination에서 전체 페이지 수가 줄면서 현재 페이지가 1로 돌아올 때, 1페이지가 번호 목록에 표시되지 않던 문제를 수정하였습니다.<!-- -->
+<ul>
+<li class="">예: 50페이지 결과의 35페이지를 보다가 새로 검색해 25페이지 결과의 1페이지로 돌아오면, 번호 목록이 1이 없는 그룹에 머물러 있었습니다. 이제 1이 포함된 첫 그룹이 표시됩니다.</li>
+</ul>
+</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[v1.8.26]]></title>
         <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.26</id>
@@ -741,22 +769,6 @@ createOnChangeHandler의 복원 분기가 stale한 _previousDateBeforeInput으�
 <h3 class="anchor anchorTargetStickyNavbar_ArNF" id="환경">환경<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.8#%ED%99%98%EA%B2%BD" class="hash-link" aria-label="환경에 대한 직접 링크" title="환경에 대한 직접 링크" translate="no">​</a></h3>
 <ul>
 <li class=""><code>@ncds/ui-admin-mcp</code> 의 Node.js 요구 버전을 22 이상으로 상향하였습니다.</li>
-</ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[v1.8.7]]></title>
-        <id>https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.7</id>
-        <link href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.7"/>
-        <updated>2026-05-26T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ui-admin 릴리즈 노트 (v1.8.7)]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_ArNF" id="ui-admin-릴리즈-노트-v187">ui-admin 릴리즈 노트 (v1.8.7)<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.7#ui-admin-%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8-v187" class="hash-link" aria-label="ui-admin 릴리즈 노트 (v1.8.7)에 대한 직접 링크" title="ui-admin 릴리즈 노트 (v1.8.7)에 대한 직접 링크" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_ArNF" id="버그-수정">버그 수정<a href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/releases/ui-admin/release-note-ui-admin-1.8.7#%EB%B2%84%EA%B7%B8-%EC%88%98%EC%A0%95" class="hash-link" aria-label="버그 수정에 대한 직접 링크" title="버그 수정에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class=""><a class="" href="https://nhn-commerce-fe.github.io/design-system/ncds-admin/docs/components/tooltip">Tooltip</a> 을 inline 으로 (좁은 부모 span 안에) 사용할 때 패널 내부 텍스트가 한 글자씩 세로로 wrap 되어 표시되던 현상을 수정하였습니다.<!-- -->
-<ul>
-<li class="">Portal 모드(기본)에서는 동작이 변하지 않으며 disablePortal/inline 사용 케이스만 영향을 받습니다.</li>
-</ul>
-</li>
 </ul>]]></content>
     </entry>
 </feed>
